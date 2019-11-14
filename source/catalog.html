@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="86" height="35" alt="Мишка">
+      <img class="page-header__logo-image" src="/img/logo-mobile.svg" width="86" height="35" alt="Мишка">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle"></button>
@@ -21,7 +22,7 @@
             <a href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Корзина:пока пуста</a>
+            <a href="#">Корзина: пока пуста</a>
           </li>
           <li class="main-nav__sub-menu">
             <ul>
@@ -35,17 +36,17 @@
     </nav>
   </header>
   <main class="main-catalog">
-    <h1>Каталог товаров</h1>
+    <h1 class="main-catalog__title">Каталог товаров</h1>
     <section class="things">
       <h2 class="visually-hidden">Товары</h2>
       <div class="things-wrapper">
         <ul class="things__list">
           <li>
-            <a href="#"><img src="https://via.placeholder.com/150x150" alt="Зайчик"></a>
+            <a href="#"><img src="/img/photo-hare-mobile@1x.jpg" width="260" height="190" alt="Зайчик"></a>
             <div>
               <div>
                 <a class="things__title" href="">Зайчик-попрыгайчик</a>
-                <p>Рост 30 см, вес 200 г</p>
+                <p class="things__list__feature">Рост 30 см, вес 200 г</p>
               </div>
               <div>
                 <b>1 200 руб.</b>
@@ -55,11 +56,11 @@
             </div>
           </li>
           <li>
-            <a href="#"><img src="https://via.placeholder.com/150x150" alt="Зайчик"></a>
+            <a href="#"><img src="img/photo-bowl-mobile@1x.jpg" width="260" height="190" alt="Корзинка для белья"></a>
             <div>
               <div>
                 <a href="#" class="things__title">Корзинка для белья</a>
-                <p>Диаметр 15 см, высота 10 см</p>
+                <p class="things__list__feature">Диаметр 15 см, высота 10 см</p>
               </div>
               <div>
                 <b>690 руб.</b>
@@ -69,11 +70,12 @@
             </div>
           </li>
           <li>
-            <a href="#"><img src="https://via.placeholder.com/150x150" alt="Зайчик"></a>
+            <a href="#"><img src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260"
+                height="190"></a>
             <div>
               <div>
                 <a href="#" class="things__title">Большая корзинка для игрушек</a>
-                <p>Диаметр 30 см, высота 30 см</p>
+                <p class="things__list__feature">Диаметр 30 см, высота 30 см</p>
               </div>
               <div>
                 <b>1 500 руб.</b>
@@ -86,12 +88,24 @@
 
       </div>
     </section>
+    <section class="catalog-video">
+      <div class="catalog-video__header">
+      <h3 class="catalog-video__title">Процесс производства</h3>
+      </div>
+      <div class="catalog-video__content">
+        <img src="img/video-mobile@1x.jpg" alt="Видео обзор">
+      </div>
+      <p class="catalog-video__comment">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
+      <div class="catalog-video__btn">
+        <a href="#" class="catalog-video__btn catalog--button">Сделать заказ</a>
+      </div>
+    </section>
+
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a href="#" class="main-footer__logo">
-        <img class="main-footer__logo-image" src="https://via.placeholder.com/150x150" width="86" height="35"
-          alt="Мишка">
+        <img class="main-footer__logo-image" src="/img/logo-tablet.svg" width="86" height="35" alt="Мишка">
       </a>
     </div>
     <ul class="social-list">
