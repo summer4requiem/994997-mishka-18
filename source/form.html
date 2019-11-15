@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Вязание на заказ</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="86" height="35" alt="Мишка">
+      <img class="page-header__logo-image" src="/img/logo-mobile.svg" width="86" height="35" alt="Мишка">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle"></button>
@@ -21,10 +22,10 @@
             <a href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Корзина:пока пуста</a>
+            <a href="#">Корзина: пока пуста</a>
           </li>
-          <li class="main-nav__sub-menu">
-            <ul>
+          <li>
+            <ul class="main-nav__sub-menu">
               <li><a href="#">Новые поступления</a></li>
               <li><a href="#">Распродажа</a></li>
             </ul>
@@ -58,7 +59,7 @@
                 <input type="checkbox" id="white" value="color" name="white" checked>
                 <label for="white">Белый</label>
                 <input type="checkbox" id="grey" value="color" name="grey" checked>
-                <label name="grey" for="grey">Серый</label>
+                <label for="grey">Серый</label>
                 <input type="checkbox" id="tiffany" value="color" name="tiffany">
                 <label for="tiffany">«Тиффани»</label>
                 <input type="checkbox" id="black" value="color" name="black">
@@ -86,20 +87,20 @@
             </li>
             <li class="form-list__case grey">
               <p>
-                <label for="phone">тел</label>
+                <label class="form-list__title" for="phone" >тел</label>
                 <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" id="phone">
               </p>
               <p>
-                <label for="email">e-mail</label>
+                <label class="form-list__title" for="email" >e-mail</label>
                 <input type="email" placeholder="Ваш Email*" name="email" id="email">
               </p>
             </li>
             <li class="form-list__case">
               <label class="form-list__title" for="suggest">доп</label>
-              <textarea name="suggestions" id="suggest"></textarea>
+              <textarea name="suggestions" id="suggest" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               <div class="form-list__btn">
-                <button type="submit">отправить заказ</button>
-                <div>*Поля обязательны для заполнения</div>
+                <button class="form-list__btn form--button" type="submit">отправить заказ</button>
+                <small>*Поля обязательны для заполнения</small>
               </div>
             </li>
           </ul>
@@ -110,8 +111,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a href="#" class="main-footer__logo">
-        <img class="main-footer__logo-image" src="https://via.placeholder.com/150x150" width="86" height="35"
-          alt="Мишка">
+        <img class="main-footer__logo-image" src="/img/logo-tablet.svg" width="86" height="35" alt="Мишка">
       </a>
     </div>
     <ul class="social-list">
