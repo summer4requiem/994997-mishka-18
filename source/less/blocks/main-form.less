@@ -1,11 +1,15 @@
 .order-page__title {
   background-color: #f1f1f1;
-  padding: 80px 40px;
+  padding: 100px 30px;
   font-size: 27px;
   line-height: 30px;
+  width: 320px;
+  text-align: center;
 }
 
 .order-page__text {
+  width: 230px;
+  padding: 5px;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
@@ -37,4 +41,73 @@
 
 .form-list__case {
   margin-bottom: 30px;
+}
+
+.form-list__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-list__btn small {
+  font-size: 14px;
+  color: #282828;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.form-list__btn {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 760px) {
+  .form-list__btn {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .form--button {
+    width: 334px;
+  }
+
+  small {
+    width: 334px;
+  }
+}
+
+.main-form {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.form-list__case.grey {
+  background-color: #f1f1f1;
+}
+
+@media (min-width: 760px) {
+  .main-form {
+    width: 768px;
+  }
+
+  .order-page__text {
+    width: 668px;
+  }
+
+  .order-page__title {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-form {
+    width: 1150px;
+  }
+
+  .order-page__text {
+    width: 700px;
+  }
+
+  .order-page__title {
+    width: 1150px;
+  }
 }

@@ -6,13 +6,67 @@
   color: black;
 }
 
+@media (min-width: 780px) {
+  .main-nav {
+    min-height: 145px;
+  }
+}
+
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__wrapper {
+  display: flex;
+  width: 320px;
+
+  .main-nav__toggle {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 780px) {
+  .page-header {
+    width: auto;
+    margin: 0;
+  }
+}
+
+
+.site-list {
+  width: 320px;
+  min-height: 90px;
+}
+
+@media (min-width: 1150px) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1150px;
+  }
+
+
+  .site-list__item {
+    width: 170px;
+  }
+
+  .main-nav__sub-menu {
+    display: flex;
+    width: 450px;
+  }
+}
 
 .main-nav__list {
   list-style: none;
   text-decoration: none;
+  padding: 0;
 
   .main-nav__sub-menu {
     list-style: none;
+    padding: 0;
   }
 }
 

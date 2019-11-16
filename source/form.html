@@ -10,7 +10,7 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="/img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+      <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle"></button>
@@ -36,7 +36,7 @@
     </nav>
   </header>
   <main class="main-form">
-    <h1 class="visually-hidden">Страница заказа</h1>
+    <!-- <h1 class="visually-hidden">Страница заказа</h1> -->
     <section class="order-page">
       <div class="order-page__wrapper">
         <h2 class="order-page__title">Вязание на заказ</h2>
@@ -53,9 +53,9 @@
                 <label for="toy">Детская игрушка</label>
               </div>
             </li>
-            <li class="form-list__case">
+            <li class="form-list__case grey">
               <span class="form-list__title">Цвет</span>
-              <div class="form-list__box grey">
+              <div class="form-list__box">
                 <input type="checkbox" id="white" value="color" name="white" checked>
                 <label for="white">Белый</label>
                 <input type="checkbox" id="grey" value="color" name="grey" checked>
@@ -87,11 +87,11 @@
             </li>
             <li class="form-list__case grey">
               <p>
-                <label class="form-list__title" for="phone" >тел</label>
+                <label class="form-list__title" for="phone">тел</label>
                 <input type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" id="phone">
               </p>
               <p>
-                <label class="form-list__title" for="email" >e-mail</label>
+                <label class="form-list__title" for="email">e-mail</label>
                 <input type="email" placeholder="Ваш Email*" name="email" id="email">
               </p>
             </li>
