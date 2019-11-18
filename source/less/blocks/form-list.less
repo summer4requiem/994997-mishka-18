@@ -1,0 +1,55 @@
+.form-list__title {
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #62d1ba;
+}
+
+.form--button {
+  font-size: 17px;
+  line-height: 16px;
+  color: #444444;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-list__case {
+  margin-bottom: 30px;
+}
+
+.form-list__case.grey {
+  background-color: #f1f1f1;
+}
+
+.form-list__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-list__btn small {
+  font-size: 14px;
+  color: #282828;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.form-list__btn {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 760px) {
+  .form-list__btn {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .form--button {
+    width: 334px;
+  }
+
+  .form--note {
+    width: 334px;
+  }
+}

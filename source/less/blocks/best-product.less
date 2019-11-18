@@ -25,6 +25,7 @@
   font-size: 15px;
   line-height: 20px;
   margin-bottom: 28px;
+  height: 100px;
 }
 
 .best-product__price {
@@ -40,4 +41,32 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.best-product {
+  width: 320px;
+  margin: 0 auto;
+  min-height: 822px;
+}
+
+@media (min-width: 780px) {
+  .best-product {
+    width: 668px;
+  }
+
+  .best-product__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .best-product {
+    width: 1050px;
+  }
+
+  .best-product__price {
+    display: flex;
+    flex-direction: column;
+  }
 }

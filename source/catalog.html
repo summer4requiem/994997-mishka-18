@@ -9,14 +9,17 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="/img/logo-mobile.svg" width="86" height="35" alt="Мишка">
-    </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle"></button>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+        </a>
+        <button class="main-nav__toggle"></button>
+      </div>
+      <!-- Что-то мне подсказывает что для мобоильной версии, кнопку меню и логотип надо обернуть, но как насчет семантики  -->
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">Каталог товаров</a></li>
+          <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
           <li class="site-list__item">
             <a href="#">Поиск по сайту</a>
@@ -28,15 +31,15 @@
             <ul class="main-nav__sub-menu">
               <li><a href="#">Новые поступления</a></li>
               <li><a href="#">Распродажа</a></li>
+              <li><span>Бесплатная доставка по России</span></li>
             </ul>
           </li>
         </ul>
-        <span>Бесплатная доставка по России</span>
       </div>
     </nav>
   </header>
+  <h1 class="main-catalog__title">Каталог товаров</h1>
   <main class="main-catalog">
-    <h1 class="main-catalog__title">Каталог товаров</h1>
     <section class="things">
       <h2 class="visually-hidden">Товары</h2>
       <div class="things-wrapper">
@@ -90,14 +93,16 @@
     </section>
     <section class="catalog-video">
       <div class="catalog-video__header">
-      <h3 class="catalog-video__title">Процесс производства</h3>
+        <h3 class="catalog-video__title">Процесс производства</h3>
       </div>
       <div class="catalog-video__content">
         <img src="img/video-mobile@1x.jpg" alt="Видео обзор">
       </div>
-      <p class="catalog-video__comment">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары</p>
+      <p class="catalog-video__comment">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+        появляются наши товары</p>
+
       <div class="catalog-video__btn">
-        <a href="#" class="catalog-video__btn catalog--button">Сделать заказ</a>
+
       </div>
     </section>
 

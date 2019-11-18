@@ -1,10 +1,3 @@
-.main-catalog__title {
-  background-color: #f1f1f1;
-  font-size: 27px;
-  line-height: 30px;
-  padding: 80px 40px;
-}
-
 .things__list {
   list-style: none;
   padding: 0;
@@ -26,4 +19,21 @@
   font-size: 13px;
   color: #444444;
   line-height: 30px;
+}
+
+@media (min-width: 1150px) {
+  .things__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .things__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .things__list li {
+    width: 317px;
+    min-height: 660px;
+  }
 }
