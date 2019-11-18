@@ -1,0 +1,54 @@
+.main-nav__list {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+.main-nav__sub-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.main-nav__sub-menu li {
+  padding: 30px 0;
+}
+
+.main-nav a {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav__toggle {
+  width: 80px;
+  height: 80px;
+}
+
+@media (min-width: 780px) {
+  .main-nav {
+    min-height: 145px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .site-list__item {
+    padding: 30px 10px;
+  }
+
+  .main-nav__sub-menu {
+    display: flex;
+    width: 1150px;
+  }
+
+  .main-nav__sub-menu li:last-child {
+    margin-left: auto;
+  }
+
+  .main-nav {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
