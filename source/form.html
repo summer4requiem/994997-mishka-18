@@ -11,16 +11,15 @@
   <header class="page-header">
     <nav class="main-nav">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
         </a>
         <button class="main-nav__toggle"></button>
       </div>
-      <!-- Что-то мне подсказывает что для мобоильной версии, кнопку меню и логотип надо обернуть, но как насчет семантики  -->
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
           <li class="site-list__item">
             <a href="#">Поиск по сайту</a>
           </li>
@@ -39,7 +38,7 @@
     </nav>
   </header>
   <main class="main-form">
-    <!-- <h1 class="visually-hidden">Страница заказа</h1> -->
+    <h1 class="visually-hidden">Страница заказа</h1>
     <section class="order-page">
       <h2 class="order-page__title">Вязание на заказ</h2>
       <div class="order-page__wrapper">
@@ -52,23 +51,21 @@
               <div class="form-list__box">
                 <span class="form-list__title">Тип</span>
                 <div>
-                <input type="radio" id="accessories">
-                <label for="accessories">Аксессуар для интерьера</label>
+                  <input type="radio" id="accessories">
+                  <label for="accessories">Аксессуар для интерьера</label>
                 </div>
                 <div>
-                <input type="radio" id="toy">
-                <label for="toy">Детская игрушка</label>
+                  <input type="radio" id="toy">
+                  <label for="toy">Детская игрушка</label>
                 </div>
               </div>
             </li>
             <li class="form-list__case grey">
-
               <div class="form-list__box">
                 <span class="form-list__title">Цвет</span>
                 <div class="form-list__wrapper">
                   <input type="checkbox" id="white" value="color" name="white" checked>
                   <label for="white">Белый</label>
-
                   <input type="checkbox" id="grey" value="color" name="grey" checked>
                   <label for="grey">Серый</label>
                 </div>
@@ -113,7 +110,8 @@
             </li>
             <li class="form-list__case">
               <label class="form-list__title" for="suggest">доп</label>
-              <textarea  class="form-list__case form-textarea" name="suggestions" id="suggest" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="form-list__case form-textarea" name="suggestions" id="suggest"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
               <div class="form-list__btn">
                 <button class="form-list__btn form--button" type="submit">отправить заказ</button>
                 <small class="form-list__btn form--note">*Поля обязательны для заполнения</small>

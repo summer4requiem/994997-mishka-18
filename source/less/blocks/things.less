@@ -21,7 +21,21 @@
   line-height: 30px;
 }
 
+@media (min-width: 760px) {
+  .things-wrapper {
+    width: 700px;
+  }
+
+  .things__list li {
+    display: flex;
+  }
+}
+
 @media (min-width: 1150px) {
+  .things-wrapper {
+    width: 1050px;
+  }
+
   .things__title {
     font-size: 20px;
     line-height: 24px;
@@ -35,5 +49,7 @@
   .things__list li {
     width: 317px;
     min-height: 660px;
+    display: flex;
+    flex-direction: column;
   }
 }
