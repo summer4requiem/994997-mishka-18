@@ -4,6 +4,10 @@
   font-weight: bold;
 }
 
+.advantages__icon path {
+  fill: #63d1bb;
+}
+
 .advantages__list {
   list-style: none;
   padding: 0;
@@ -15,16 +19,21 @@
   font-weight: bold;
 }
 
-.advantages {
-  width: 260px;
+.advantages__wrapper {
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 60px;
 }
 
 @media (min-width: 780px) {
   .advantages {
-    width: 646px;
+    width: 100%;
   }
+}
+
+.advantages {
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: 1150px) {
@@ -38,7 +47,8 @@
   }
 
   .advantages__item {
-    width: 350px;
+    padding: 3%;
+    width: 50%;
   }
 
   .advantages__list {

@@ -3,19 +3,54 @@
   line-height: 24px;
   margin-bottom: 33px;
 
+
   .promo-buttons__btn {
     text-decoration: none;
     font-weight: bold;
   }
 }
 
+.promo-buttons__wrap {
+  padding: 26px 283px 32px 15px;
+}
+
+.promo-buttons__wrap:first-child {
+  background-color: #63d1bb;
+}
+
+.promo-buttons__wrap:last-child {
+  background-color: #56c3b2;
+}
+
+.promo-buttons__wrap a {
+  color: #ffffff;
+}
+
 @media (min-width: 1150px) {
   .promo-buttons {
     display: flex;
+    max-width: 1050px;
+    margin: 0 auto;
   }
 
   .promo-buttons__wrap {
-    width: 525px;
+    width: 50%;
+  }
+
+  .promo-buttons__wrap a {
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+  }
+
+  .promo-buttons__wrap:first-child {
+    background-color: #63d1bb;
+    padding: 35px;
+  }
+
+  .promo-buttons__wrap:last-child {
+    background-color: #56c3b2;
+    padding: 35px;
   }
 }
 
@@ -25,6 +60,6 @@
   }
 
   .promo-buttons__wrap {
-    width: 338px;
+    width: 50%;
   }
 }
