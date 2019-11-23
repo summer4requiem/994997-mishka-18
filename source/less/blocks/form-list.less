@@ -1,26 +1,58 @@
 .form-list__title {
+  position: relative;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   font-weight: bold;
   color: #62d1ba;
+  padding: 5px;
+  display: inline-block;
+  width: 100%;
+}
+
+.form-list__title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 200px;
+  background-color: #62d1ba;
+  top: 14px;
 }
 
 .form--button {
-  font-size: 17px;
-  line-height: 16px;
+  display: block;
   color: #444444;
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  padding: 10px 42px;
+  border: 2px solid;
+  text-align: center;
+  background-color: transparent;
+}
+
+.form-list__cell {
+  margin-bottom: 35px;
+  margin-left: 65px;
+}
+
+.form-list__name {
+  border-bottom: 2px solid #000000;
+}
+
+.form-list__name label {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.form-list__name input {
+  width: 100%;
 }
 
 .form-list__case {
-  margin-bottom: 30px;
-}
-
-
-.form-list__case.grey {
-  background-color: #f1f1f1;
+  margin-bottom: 19px;
 }
 
 .form-list__btn small {
@@ -28,6 +60,7 @@
   color: #282828;
   line-height: 16px;
   font-weight: normal;
+  margin-bottom: 30px;
 }
 
 .form-list__btn {
@@ -45,6 +78,10 @@
     width: 334px;
   }
 
+  .form-list__case.grey {
+    background-color: #f1f1f1;
+  }
+
   .form--note {
     width: 334px;
   }
@@ -53,6 +90,10 @@
 @media (min-width: 1150px) {
   .form-list__case {
     padding: 65px;
+  }
+
+  .form-list__case.grey {
+    background-color: #f1f1f1;
   }
 
   .form-textarea {

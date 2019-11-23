@@ -7,6 +7,11 @@
   }
 }
 
+.things-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .things__title {
   color: #000000;
   font-weight: bold;
@@ -15,10 +20,46 @@
   text-decoration: none;
 }
 
-.things__list__feature {
+.things__info {
   font-size: 13px;
   color: #444444;
   line-height: 30px;
+}
+
+.things__price {
+  padding: 27px 27px 25px 27px;
+}
+
+.things__feature {
+  border: 1px solid #ececec;
+}
+
+.things__buttons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 27px 25px 27px;
+}
+
+.things__buttons::before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 1px;
+  background-color: #ececec;
+  top: 3px;
+}
+
+.things__icon path {
+  fill: #d6d6d6;
+}
+
+.things__icon path:hover {
+  fill: #63d1bb;
+}
+
+.things__icon path:active {
+  fill: #d0f1ea;
 }
 
 @media (min-width: 768px) {
