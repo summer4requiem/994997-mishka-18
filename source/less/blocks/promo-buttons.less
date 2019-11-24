@@ -4,27 +4,88 @@
   margin-bottom: 33px;
 
   .promo-buttons__btn {
+    display: flex;
+    justify-content: space-between;
     text-decoration: none;
     font-weight: bold;
   }
 }
 
+.promo-buttons__icon path {
+  fill: #3bb09d;
+}
+
+.promo-buttons__icon path:hover {
+  fill: #29a592;
+}
+
+.promo-buttons__wrap {
+  padding: 27px 30px 15px 27px;
+}
+
+.promo-buttons__wrap:first-child {
+  background-color: #63d1bb;
+}
+
+.promo-buttons__wrap:first-child:hover {
+  background-color: #59d5bc;
+}
+
+.promo-buttons__wrap:first-child:active {
+  background-color: #59d5bc;
+}
+
+.promo-buttons__wrap:last-child {
+  background-color: #56c3b2;
+}
+
+.promo-buttons__wrap:last-child:hover {
+  background-color: #46c1ae;
+}
+
+.promo-buttons__wrap a {
+  color: #ffffff;
+}
+
+.promo-buttons__wrap a:active {
+  opacity: 0.3;
+}
+
 @media (min-width: 1150px) {
   .promo-buttons {
     display: flex;
+    max-width: 1050px;
+    margin: 0 auto;
   }
 
   .promo-buttons__wrap {
-    width: 525px;
+    width: 50%;
+  }
+
+  .promo-buttons__wrap a {
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+  }
+
+  .promo-buttons__wrap:first-child {
+    background-color: #63d1bb;
+    padding: 35px;
+  }
+
+  .promo-buttons__wrap:last-child {
+    background-color: #56c3b2;
+    padding: 35px;
   }
 }
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   .promo-buttons {
+    width: 100%;
     display: flex;
   }
 
   .promo-buttons__wrap {
-    width: 338px;
+    width: 50%;
   }
 }

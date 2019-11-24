@@ -1,22 +1,33 @@
 .main-page__background {
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  min-height: 373px;
+  background-position-x: -115px;
+  background-position-y: -45px;
+  min-height: 263px;
 }
 
 .main-page__wrapper {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
 }
 
 .main-page__title {
   font-size: 27px;
   line-height: 30px;
+  padding: 50px 27px;
+  text-align: center;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   .main-page__wrapper {
     width: 668px;
+  }
+
+  .main-page__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 78px 80px;
+    text-align: center;
   }
 }
 
@@ -25,11 +36,13 @@
     background-color: #fafafa;
     width: 100%;
     margin-top: -80px;
+    margin-bottom: 70px;
   }
 
   .main-page__background {
     background-image: url("../img/hero-desktop@1x.jpg");
     min-height: 582px;
+    background-position: center;
   }
 
   .main-page__title {
