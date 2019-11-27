@@ -133,7 +133,6 @@
 }
 
 .form-list__name {
-  border-bottom: 2px solid #000000;
   margin: 0;
   margin-bottom: 32px;
 }
@@ -147,7 +146,7 @@
   padding: 0;
 }
 
-.form-list__name:hover {
+.form-list__name input:hover:focus {
   border-bottom: 2px solid #62d1ba;
 }
 
@@ -159,7 +158,9 @@
 }
 
 .form-list__name input {
-  width: 81%;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000000;
 }
 
 .form-list__icon path {
@@ -189,6 +190,96 @@
     flex-direction: row-reverse;
   }
 
+  .form-list__name {
+    margin-bottom: 46px;
+    display: flex;
+  }
+
+  .form-list__name label {
+    width: 25%;
+    margin-right: 10px;
+  }
+
+  .form-list__name input {
+    background-color: transparent;
+  }
+
+  .form-list__case:nth-child(4) p {
+    margin-bottom: 63px;
+    padding-bottom: 20px;
+  }
+
+  .form-list__numbers-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .form-list__cell {
+    width: 50%;
+    margin-bottom: 34px;
+  }
+
+  .form-list__wrapper {
+    display: flex;
+  }
+
+  .form-list__box {
+    font-size: 19px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-left: 40px;
+  }
+
+  .form-list__inner {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .form-list__title {
+    width: 10%;
+    align-self: end;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .form-list__case:first-child {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .form-list__case:nth-child(3) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .form-list__case:nth-child(3) .form-list__wrapper {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+
+  .form-list__radio {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form-list__radio label {
+    margin-bottom: 40px;
+  }
+
   .form--button {
     width: 334px;
   }
@@ -203,7 +294,7 @@
 }
 
 .checkbox--column {
-  margin-bottom: 10px;
+  margin-bottom: 80px;
 }
 
 @media (min-width: 1150px) {

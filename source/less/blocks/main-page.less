@@ -19,15 +19,39 @@
 }
 
 @media (min-width: 768px) {
-  .main-page__wrapper {
-    width: 668px;
-  }
-
   .main-page__title {
     font-size: 43px;
     line-height: 50px;
-    padding: 78px 80px;
+    padding: 252px 80px;
     text-align: center;
+  }
+
+  .site-list__item a {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .main-page__background {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 95px;
+    min-height: 731px;
+    margin-top: -212px;
+  }
+
+  .main-page__background::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    min-height: 24px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    bottom: 195px;
+  }
+
+  .main-page__wrapper {
+    width: 100%;
   }
 }
 

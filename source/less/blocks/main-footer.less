@@ -5,10 +5,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  .main-footer__wrapper {
-    display: none;
-  }
+.main-footer__wrapper {
+  display: none;
 }
 
 .main-form__inner {
@@ -66,15 +66,30 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 765px) {
   .main-footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    min-height: 143px;
+    justify-content: center;
   }
+
+  .footer-copyright {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
 
   .main-footer__wrapper {
     display: block;
+    width: 26%;
+  }
+
+  .main-footer__inner {
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
 

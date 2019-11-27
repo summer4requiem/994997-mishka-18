@@ -37,10 +37,37 @@
     display: flex;
     min-width: 768px;
     min-height: 90px;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    border: none;
+    padding: 17px 1px 0px 34px;
   }
 
   .main-nav__sub-menu {
     display: block;
+  }
+
+  .site-list__text {
+    display: none;
+  }
+
+  .site-list__item:nth-child(1) {
+    width: 44%;
+    padding: 5px;
+    order: -6;
+    margin-right: 43px;
+  }
+
+  .site-list__item:nth-child(5) {
+    order: -3;
+  }
+
+  .site-list__item:nth-child(4) {
+    order: -4;
+    width: 10%;
   }
 }
 
