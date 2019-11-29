@@ -45,16 +45,20 @@
     margin: 0 auto;
   }
 
-  .order-page__title {
+  .order-page__title-wrapper {
     position: relative;
-    z-index: -1;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: #f1f1f1;
+    margin-top: -84px;
+    margin-bottom: 5px;
+    z-index: -10;
+  }
+
+  .order-page__title {
     width: auto;
-    padding-top: 94px;
-    padding-bottom: 84px;
-    margin-top: -87px;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 58px;
   }
 
   .order-page__title::after {
@@ -70,9 +74,15 @@
 
 @media (min-width: 1150px) {
   .order-page__text {
-    width: 700px;
+    width: 75%;
     margin: 0 auto;
   }
+
+  .order-page__title-wrapper {
+    margin-top: -83px;
+    padding-top: 84px;
+  }
+
 
   .order-page__title {
     width: 100%;

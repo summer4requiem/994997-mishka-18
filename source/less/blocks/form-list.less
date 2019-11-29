@@ -187,7 +187,10 @@
 @media (min-width: 768px) {
   .form-list__btn {
     justify-content: space-between;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    padding-left: 55px;
+    padding-right: 30px;
+    padding-top: 18px;
   }
 
   .form-list__name {
@@ -205,18 +208,32 @@
   }
 
   .form-list__case:nth-child(4) p {
-    margin-bottom: 63px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    padding-top: 35px;
+    margin: 0;
   }
 
   .form-list__numbers-wrapper {
     width: 90%;
     margin: 0 auto;
+    padding: 37px 0 54px 17px;
+  }
+
+  .form-list__message {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 44px;
+    padding-right: 45px;
+    padding-top: 15px;
+  }
+
+  .form-textarea {
+    width: 74%;
   }
 
   .form-list__cell {
     width: 50%;
-    margin-bottom: 34px;
+    margin-bottom: 21px;
   }
 
   .form-list__wrapper {
@@ -229,8 +246,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 55px;
-    padding-left: 40px;
+    padding-top: 48px;
+    padding-left: 18px;
   }
 
   .form-list__inner {
@@ -253,6 +270,8 @@
   .form-list__case:first-child {
     display: flex;
     margin-bottom: 10px;
+    padding-left: 50px;
+    padding-top: 10px;
   }
 
   .form-list__case:nth-child(3) {
@@ -270,18 +289,41 @@
   }
 
   .form-list__radio {
-    width: 50%;
+    width: 64%;
     margin: 0 auto;
     font-size: 19px;
     line-height: 18px;
+    padding-top: 0;
   }
 
   .form-list__radio label {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+  }
+
+  .form-list__radio label::before {
+    width: 53px;
+    height: 53px;
+  }
+
+  .radio--control:checked + label::after {
+    top: 21px;
+    left: 17px;
+  }
+
+  .form-list__inner label::before {
+    width: 53px;
+    height: 53px;
+  }
+
+  .checkbox--control:checked + label::after {
+    width: 34px;
+    height: 34px;
+    background-size: 34px 34px;
   }
 
   .form--button {
-    width: 334px;
+    width: 34%;
+    padding: 2px 29px;
   }
 
   .form-list__case.grey {

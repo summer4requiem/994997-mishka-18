@@ -147,7 +147,22 @@
 
 @media (min-width: 1150px) {
   .best-product {
-    width: 1050px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .best-product__header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .best-product__cell {
+    width: 40%;
+  }
+
+  .best-product__wrapper {
+    justify-content: center;
   }
 
   .best-product__price {
@@ -158,5 +173,10 @@
   .best-product__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .best-product::after {
+    background-size: 100% 100%;
+    height: 26px;
   }
 }

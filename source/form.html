@@ -46,7 +46,7 @@
               </svg>
               Корзина: пока пуста</a>
           </li>
-          <li>
+          <li class="site-list__item">
             <ul class="main-nav__sub-menu">
               <li class="site-list__text"><a href="#">Новые поступления</a></li>
               <li class="site-list__text"><a href="#">Распродажа</a></li>
@@ -60,7 +60,9 @@
   <main class="main-form">
     <h1 class="visually-hidden">Страница заказа</h1>
     <section class="order-page">
-      <h2 class="order-page__title">Вязание на заказ</h2>
+      <div class="order-page__title-wrapper">
+        <h2 class="order-page__title">Вязание на заказ</h2>
+      </div>
       <p class="order-page__text"> Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
         мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -176,9 +178,11 @@
             </div>
           </li>
           <li class="form-list__case">
-            <label class="form-list__title" for="suggest">доп</label>
-            <textarea class="form-list__case form-textarea" name="suggestions" id="suggest"
-              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="form-list__message">
+              <label class="form-list__title" for="suggest">доп</label>
+              <textarea class="form-list__case form-textarea" name="suggestions" id="suggest"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
             <div class="form-list__btn">
               <button class="form-list__btn form--button" type="submit">отправить заказ</button>
               <small class="form-list__btn form--note">*Поля обязательны для заполнения</small>
