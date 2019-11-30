@@ -335,22 +335,118 @@
   }
 }
 
-.checkbox--column {
-  margin-bottom: 80px;
-}
-
 @media (min-width: 1150px) {
   .form-list__case {
     padding: 65px;
+    margin-bottom: 0;
   }
 
-  .form-list__case.grey {
-    background-color: #f1f1f1;
+  .form-list__name {
+    margin-bottom: 44px;
+  }
+
+  .form-list__case:nth-child(3) {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-right: 200px;
+  }
+
+  .form-list__case:nth-child(4) {
+    padding-top: 0;
+    padding-right: 200px;
+    padding-bottom: 0;
+  }
+
+  .form-list__case:nth-child(5) {
+    padding: 0;
+    padding-top: 32px;
+    padding-right: 176px;
+    margin-bottom: 62px;
+  }
+
+  .form-list__message {
+    margin-bottom: 28px;
   }
 
   .form-textarea {
     width: 700px;
-    min-height: 149px;
-    padding: 25px;
+    margin-bottom: 20px;
+    padding-top: 13px;
+    padding-left: 17px;
+  }
+
+  .form-list__btn {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    .form--button {
+      min-width: 223px;
+    }
+  }
+
+  .form-list__case:nth-child(3) .form-list__wrapper {
+    width: 700px;
+    padding-top: 24px;
+  }
+
+  .form-list__title {
+    width: 105px;
+  }
+
+  .form-list__case:first-child {
+    width: 1150px;
+    padding: 0;
+  }
+
+  .form-list__case:first-child .title {
+    margin-right: 20px;
+  }
+
+  .form-list__radio {
+    margin: 0;
+  }
+
+  .form-list__radio label::before {
+    margin-right: 17px;
+  }
+
+  .form-list__radio label {
+    margin-bottom: 14px;
+  }
+
+  .form-list__cell {
+    width: auto;
+  }
+
+  .form-list__wrapper {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-list__inner {
+    width: 875px;
+    flex-direction: row;
+    padding-right: 52px;
+    padding-left: 30px;
+  }
+
+  .form-list__box {
+    padding-top: 10px;
+  }
+
+  .test {
+    width: 911px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 26px;
+  }
+
+  .form-list__case.grey {
+    background-color: #f1f1f1;
   }
 }

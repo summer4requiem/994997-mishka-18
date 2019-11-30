@@ -107,6 +107,11 @@
     order: 0;
   }
 
+  .main-nav__sub-menu {
+    display: flex;
+    width: auto;
+  }
+
   .main-nav__sub-menu .site-list__text {
     display: block;
     font-size: 15px;
@@ -119,6 +124,7 @@
 
   .site-list__item:nth-child(3) {
     order: -7;
+    border: none;
   }
 
   .site-list__item:nth-child(4) {
@@ -129,6 +135,8 @@
   .site-list__item:nth-child(5) {
     padding: 0;
     order: -3;
+    align-self: center;
+    border: none;
   }
 
   .site-list__item:nth-child(1) {
@@ -139,12 +147,8 @@
 
   .site-list__item:nth-child(6) {
     padding: 0;
-    width: auto;
-  }
-
-  .main-nav__sub-menu {
-    display: flex;
-    width: auto;
+    width: 100%;
+    margin: 0;
   }
 
   .main-nav__sub-menu a {
@@ -157,8 +161,8 @@
   }
 
   .main-nav__wrapper {
+    width: 1050px;
     margin: 0 auto;
-    width: 90%;
     position: relative;
     display: flex;
   }
