@@ -43,6 +43,7 @@
 .reviews__item {
   margin: 0;
   margin-bottom: 45px;
+  padding-left: 10px;
 }
 
 
@@ -57,7 +58,6 @@
   background-color: transparent;
   border: none;
 }
-
 
 .reviews__inner {
   width: 80%;
@@ -83,28 +83,115 @@
   line-height: 24px;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 765px) {
   .reviews {
-    width: 768px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__item {
+    margin-bottom: 0;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+    color: #444444;
+    margin-bottom: 59px;
+  }
+
+  .reviews__link {
+    display: block;
+  }
+
+  .reviews__author {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .reviews__slider {
+    display: flex;
+    justify-content: space-between;
+    width: 27%;
+    margin-left: auto;
+    margin-top: -37px;
+    border: none;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 76px;
+    padding-left: 8px;
+    margin-bottom: 49px;
+  }
+
+  .reviews__inner {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 46px;
+  }
+
+  .reviews__sliderBtn {
+    width: 50%;
+  }
+
+  .reviews__btn {
+    position: absolute;
+    top: 82px;
+    right: 0;
+    padding: 16px 49px;
   }
 }
 
 @media (min-width: 1150px) {
   .reviews {
-    width: 85%;
+    width: 1050px;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 139px;
     background-image: url("/img/review@1x.jpg");
     background-repeat: no-repeat;
+  }
+
+  .reviews__item {
+    padding: 0;
+  }
+
+  .reviews__text {
+    padding-right: 102px;
+    margin-bottom: 39px;
+  }
+
+  .reviews__slider {
+    width: 175px;
+  }
+
+  .reviews__btn {
+    top: 73px;
+    padding: 14px 41px;
+  }
+
+  .reviews__inner {
+    width: 875px;
+    margin-left: 171px;
+    margin-bottom: 120px;
   }
 
   .reviews__title {
     font-size: 53px;
     line-height: 57px;
+    padding-top: 63px;
+    padding-left: 0;
   }
 
   .reviews__wrap {
     width: 875px;
     margin-left: auto;
+  }
+
+  .reviews::after {
+    height: 26px;
+    background-size: 100% 100%;
   }
 }

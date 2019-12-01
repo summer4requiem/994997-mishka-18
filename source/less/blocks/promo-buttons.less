@@ -1,7 +1,10 @@
 .promo-buttons {
   font-size: 19px;
   line-height: 24px;
-  margin-bottom: 33px;
+  margin-bottom: 29px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
   .promo-buttons__btn {
     display: flex;
@@ -11,16 +14,17 @@
   }
 }
 
+.promo-buttons__wrap {
+  width: 100%;
+  padding: 27px 30px 15px 35px;
+}
+
 .promo-buttons__icon path {
   fill: #3bb09d;
 }
 
 .promo-buttons__icon path:hover {
   fill: #29a592;
-}
-
-.promo-buttons__wrap {
-  padding: 27px 30px 15px 27px;
 }
 
 .promo-buttons__wrap:first-child {
@@ -44,8 +48,11 @@
 }
 
 .promo-buttons__wrap a {
-  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
 }
+
 
 .promo-buttons__wrap a:active {
   opacity: 0.3;
@@ -53,19 +60,21 @@
 
 @media (min-width: 1150px) {
   .promo-buttons {
+    position: relative;
     display: flex;
-    max-width: 1050px;
-    margin: 0 auto;
+    margin: 0;
+    margin-top: 37px;
   }
 
-  .promo-buttons__wrap {
-    width: 50%;
-  }
-
-  .promo-buttons__wrap a {
-    font-size: 20px;
-    line-height: 30px;
-    color: white;
+  .promo-buttons::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    min-height: 24px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    bottom: 33px;
+    left: 0;
   }
 
   .promo-buttons__wrap:first-child {
@@ -83,6 +92,9 @@
   .promo-buttons {
     width: 100%;
     display: flex;
+    flex-direction: row;
+    margin-bottom: 26px;
+    padding: 0 49px 34px 51px;
   }
 
   .promo-buttons__wrap {

@@ -1,27 +1,31 @@
 .order-page__title {
   background-color: #f1f1f1;
-  padding: 100px 30px;
+  padding: 73px 30px;
   font-size: 27px;
   line-height: 30px;
   width: auto;
   text-align: center;
+  margin: 0;
 }
 
 .order-page__wrapper {
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .order-page__text {
   font-size: 13px;
   line-height: 24px;
   color: #444444;
-  padding: 7px 7px;
+  padding: 11px 7px 7px 2px;
+  margin-bottom: 9px;
 }
 
 .order-page__form {
   list-style: none;
   padding: 0;
+  margin: 0;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -29,12 +33,42 @@
 
 @media (min-width: 768px) {
   .order-page__text {
-    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 52px;
+    padding-right: 51px;
+    margin-bottom: 28px;
+  }
+
+  .order-page__wrapper {
+    width: 100%;
     margin: 0 auto;
+  }
+
+  .order-page__title-wrapper {
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 18px;
+    background-color: #f1f1f1;
+    margin-top: -84px;
+    margin-bottom: 53px;
+    z-index: -10;
   }
 
   .order-page__title {
     width: auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .order-page__title::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 20px;
+    left: 0;
+    bottom: 0;
+    background-image: url("../img/bg-zigzag-fill.svg");
   }
 }
 
@@ -42,11 +76,20 @@
   .order-page__text {
     width: 700px;
     margin: 0 auto;
+    padding: 10px 0;
+    margin-bottom: 22px;
+  }
+
+  .order-page__title-wrapper {
+    margin-top: -83px;
+    padding-top: 174px;
+    padding-bottom: 82px;
+    margin-bottom: 107px;
   }
 
   .order-page__title {
+    padding: 0;
     width: 100%;
-    min-height: 260px;
     font-size: 53px;
     line-height: 57px;
     margin-top: -80px;
@@ -55,5 +98,6 @@
   .order-page__wrapper {
     width: 1050px;
     margin: 0 auto;
+    margin-bottom: 107px;
   }
 }
