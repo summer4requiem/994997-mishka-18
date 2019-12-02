@@ -17,7 +17,11 @@
           <li class="site-list__item">
             <div class="page-header__wrapper">
               <a class="page-header__logo" href="index.html">
-                <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+                  <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
+                </picture>
               </a>
               <button class="main-nav__toggle"></button>
             </div>
@@ -25,15 +29,14 @@
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
           <li class="site-list__item">
-            <a href="#">
-              <svg class="site-list__search-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px"
-                viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-                <path fill="#231F20"
-                  d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z" />
-              </svg>
-              <span class="site-list__text" aria-label="Поиск по сайту">Поиск по сайту</span>
+            <a href="#" class="site-list__text">Поиск по сайту
             </a>
+            <svg class="site-list__search-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px"
+              viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+              <path fill="#231F20"
+                d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z" />
+            </svg>
           </li>
           <li class="site-list__item">
             <a href="#">
@@ -64,8 +67,16 @@
       <div class="things-wrapper">
         <ul class="things__list">
           <li class="things__item">
-            <a class="things__img" href="#"><img src="./img/photo-hare-mobile@1x.jpg" width="100%" height="197"
-                alt="Зайчик"></a>
+            <a class="things__img" href="#">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="./img/photo-hare-desktop@1x.jpg 1x, ./img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/photo-hare-tablet@1x.jpg 1x, ./img/photo-hare-tablet@2x.jpg 2x">
+                <img class="things__img--toys" src="./img/photo-hare-mobile@1x.jpg 1x" width="100%" height="197"
+                  alt="Зайчик" srcset="./img/photo-hare-mobile@2x.jpg 2x">
+              </picture>
+            </a>
             <div class="things__feature">
               <div class="things__price">
                 <a class="things__title" href="">Зайчик-попрыгайчик</a>
@@ -85,8 +96,16 @@
             </div>
           </li>
           <li class="things__item">
-            <a class="things__img" href="#"><img src="img/photo-bowl-mobile@1x.jpg" width="100%" height="197"
-                alt="Корзинка для белья"></a>
+            <a class="things__img" href="#">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="./img/photo-bowl-desktop@1x.jpg 1x, ./img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/photo-bowl-tablet@1x.jpg 1x, ./img/photo-bowl-tablet@2x.jpg 2x,">
+                <img class="things__img--toys" src="./img/photo-bowl-mobile@1x.jpg 1x" width="100%" height="197"
+                  srcset="./img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
+              </picture>
+            </a>
             <div class="things__feature">
               <div class="things__price">
                 <a href="#" class="things__title">Корзинка для белья</a>
@@ -106,8 +125,16 @@
             </div>
           </li>
           <li class="things__item">
-            <a class="things__img" href="#"><img src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек"
-                width="100%" height="197"></a>
+            <a class="things__img" href="#">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="./img/photo-toys-desktop@1x.jpg 1x, ./img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./img/photo-toys-tablet@1x.jpg 1x, ./img/photo-toys-tablet@2x.jpg 2x">
+                <img class="things__img--toys" src="./img/photo-toys-mobile@1x.jpg"
+                  srcset="./img/photo-toys-mobile@2x.jpg 2x" alt="Корзинка для игрушек">
+              </picture>
+            </a>
             <div class="things__feature">
               <div class="things__price">
                 <a href="#" class="things__title">Большая корзинка для&nbsp;игрушек</a>
@@ -146,7 +173,12 @@
             </svg></div>
           <span>Процесс производства</span>
         </div>
-        <img src="img/video-mobile@1x.jpg" alt="Видео обзор" width="100%">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg">
+          <img class="catalog__video-img" src="./img/video-mobile@1x.jpg" width="260" height="150"
+            alt="Корзинка для белья">
+        </picture>
         <a href="#" class="catalog__play-button">
           <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="100.678px" height="76.891px" viewBox="247.3 382.56 100.678 76.891"
@@ -180,7 +212,7 @@
     <div class="main-footer__inner">
       <div class="main-footer__wrapper">
         <a href="#" class="main-footer__logo">
-          <img class="main-footer__logo-image" src="../img/logo-tablet.svg" width="86" height="35" alt="Мишка">
+          <img class="main-footer__logo-image" src="./img/logo-footer.svg" width="86" height="35" alt="Мишка">
         </a>
       </div>
       <ul class="social-list">
