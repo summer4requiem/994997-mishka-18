@@ -58,38 +58,14 @@
   opacity: 0.3;
 }
 
-@media (min-width: 1150px) {
-  .promo-buttons {
-    position: relative;
-    display: flex;
-    margin: 0;
-    margin-top: 37px;
-  }
-
-  .promo-buttons::after {
-    position: absolute;
-    content: "";
-    display: inline-block;
-    min-height: 24px;
-    width: 100%;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    bottom: 33px;
-    left: 0;
-  }
-
-  .promo-buttons__wrap:first-child {
-    background-color: #63d1bb;
-    padding: 35px;
-  }
-
-  .promo-buttons__wrap:last-child {
-    background-color: #56c3b2;
-    padding: 35px;
-  }
+.promo-buttons__wrap:last-child {
+  background-color: #56c3b2;
+  padding: 35px;
 }
 
 @media (min-width: 768px) {
   .promo-buttons {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -99,5 +75,36 @@
 
   .promo-buttons__wrap {
     width: 50%;
+  }
+
+  .promo-buttons::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 24px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    bottom: 30px;
+    left: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .promo-buttons {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    margin-top: -112px;
+    max-width: 1050px;
+  }
+
+  .promo-buttons::after {
+    top: 112px;
+  }
+
+  .promo-buttons__wrap:first-child {
+    background-color: #63d1bb;
+    padding: 35px;
   }
 }
