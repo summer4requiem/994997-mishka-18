@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+.best-product__img {
+  width: 260px;
+  height: 320px;
+}
+
 .best-product__caption {
   font-size: 17px;
   line-height: 20px;
@@ -102,8 +107,17 @@
     margin-bottom: 28px;
   }
 
+  .best-product__img {
+    width: 334px;
+    height: 401px;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("./img/triple-set-tablet@2x.jpg");
+    }
+  }
+
   .best-product__inner {
-    width: 90%;
+    width: 668px;
   }
 
   .best-product {
@@ -141,7 +155,7 @@
 
   .best-product__button {
     width: 45%;
-    margin-right: auto;
+    margin-top: -62px;
   }
 }
 
@@ -149,6 +163,20 @@
   .best-product {
     width: 1150px;
     margin: 0 auto;
+  }
+
+  .best-product__img {
+    width: 525px;
+    height: 636px;
+    width: 525px;
+    height: 636px;
+    position: absolute;
+    top: -151px;
+    z-index: -1;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("./img/triple-set-tablet@2x.jpg");
+    }
   }
 
   .best-product__cost {
@@ -169,6 +197,7 @@
     width: 292px;
     padding: 0;
     margin-left: 175px;
+    margin-top: -320px;
   }
 
   .best-product__header {
@@ -186,6 +215,8 @@
 
   .best-product__item {
     width: 50%;
+    min-height: 636px;
+    position: relative;
   }
 
   .best-product__wrapper {

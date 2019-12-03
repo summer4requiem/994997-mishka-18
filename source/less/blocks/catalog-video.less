@@ -29,7 +29,7 @@
 
 .catalog-video {
   position: relative;
-  width: 80%;
+  width: 260px;
   margin: 0 auto;
   margin-bottom: 65px;
   border: 1px solid #ececec;
@@ -77,6 +77,17 @@
   margin-top: 13px;
 }
 
+@media (min-width: 768px) {
+  .catalog__video-img {
+    width: 668px;
+    height: 455px;
+  }
+
+  .catalog-video {
+    width: 668px;
+  }
+}
+
 @media (min-width: 1150px) {
   .catalog-video__comment {
     width: 370px;
@@ -92,6 +103,11 @@
     line-height: 24px;
     font-weight: bold;
     color: #000000;
+  }
+
+  .catalog__video-img {
+    width: 682px;
+    height: 455px;
   }
 
   .catalog-video {

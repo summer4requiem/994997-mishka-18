@@ -63,32 +63,31 @@
   fill: #d0f1ea;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   .things-wrapper {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 53px;
   }
 
+  .things__img--toys {
+    width: 334px;
+    height: 334px;
+  }
+
   .things__item {
     display: flex;
     margin-bottom: 50px;
-  }
-
-  .things__img {
-    width: 50%;
-    display: block;
-  }
-
-  .things__price {
-    margin-bottom: 153px;
+    width: 668px;
   }
 
   .things__feature {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
-
 
 @media (min-width: 1150px) {
   .things-wrapper {
@@ -119,5 +118,10 @@
     min-height: 719px;
     display: flex;
     flex-direction: column;
+  }
+
+  .things__img--toys {
+    width: 316px;
+    height: 462px;
   }
 }
