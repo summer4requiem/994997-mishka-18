@@ -16,7 +16,7 @@ html {
 //   outline: 1px solid red;
 // }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -27,4 +27,8 @@ html {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.checkbox--control:focus + .form-list__label::before {
+  outline: 2px solid blue;
 }

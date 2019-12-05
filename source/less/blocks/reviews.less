@@ -49,6 +49,7 @@
 
 .reviews__slider {
   width: 100%;
+  padding: 9px 19px;
   border: 1px solid #ececec;
   margin-bottom: 50px;
 }
@@ -87,6 +88,11 @@
   .reviews {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+    background-size: 350px 457px;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__item {
@@ -151,7 +157,10 @@
     margin: 0 auto;
     margin-bottom: 139px;
     background-image: url("/img/review@1x.jpg");
-    background-repeat: no-repeat;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__item {

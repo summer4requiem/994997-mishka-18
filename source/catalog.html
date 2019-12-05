@@ -11,7 +11,7 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav .main-nav--closed">
+    <nav class="main-nav main-nav--closed">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -60,8 +60,9 @@
       </div>
     </nav>
   </header>
-  <h1 class="main-catalog__title">Каталог товаров</h1>
+
   <main class="main-catalog">
+    <h1 class="main-catalog__title">Каталог товаров</h1>
     <section class="things">
       <h2 class="visually-hidden">Товары</h2>
       <div class="things-wrapper">
@@ -73,7 +74,7 @@
                   srcset="./img/photo-hare-desktop@1x.jpg 1x, ./img/photo-hare-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="./img/photo-hare-tablet@1x.jpg 1x, ./img/photo-hare-tablet@2x.jpg 2x">
-                <img class="things__img--toys" src="./img/photo-hare-mobile@1x.jpg 1x" width="100%" height="197"
+                <img class="things__img_toys" src="./img/photo-hare-mobile@1x.jpg 1x" width="100%" height="197"
                   alt="Зайчик" srcset="./img/photo-hare-mobile@2x.jpg 2x">
               </picture>
             </a>
@@ -101,8 +102,8 @@
                 <source media="(min-width: 1150px)"
                   srcset="./img/photo-bowl-desktop@1x.jpg 1x, ./img/photo-bowl-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="./img/photo-bowl-tablet@1x.jpg 1x, ./img/photo-bowl-tablet@2x.jpg 2x,">
-                <img class="things__img--toys" src="./img/photo-bowl-mobile@1x.jpg 1x" width="100%" height="197"
+                  srcset="./img/photo-bowl-tablet@1x.jpg 1x, ./img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="things__img_toys" src="./img/photo-bowl-mobile@1x.jpg 1x" width="260" height="195"
                   srcset="./img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
               </picture>
             </a>
@@ -131,7 +132,7 @@
                   srcset="./img/photo-toys-desktop@1x.jpg 1x, ./img/photo-toys-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
                   srcset="./img/photo-toys-tablet@1x.jpg 1x, ./img/photo-toys-tablet@2x.jpg 2x">
-                <img class="things__img--toys" src="./img/photo-toys-mobile@1x.jpg"
+                <img class="things__img_toys" src="./img/photo-toys-mobile@1x.jpg"
                   srcset="./img/photo-toys-mobile@2x.jpg 2x" alt="Корзинка для игрушек">
               </picture>
             </a>
@@ -174,15 +175,16 @@
           <span>Процесс производства</span>
         </div>
         <picture>
-          <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg">
-          <img class="catalog__video-img" src="./img/video-mobile@1x.jpg" width="260" height="150"
-            alt="Корзинка для белья">
+          <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg, ./img/video-tablet@2x.jpg 2x">
+          <img class="catalog-video__img" src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x"
+            width="260" height="150" alt="Корзинка для белья">
         </picture>
-        <a href="#" class="catalog__play-button">
-          <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" width="100.678px" height="76.891px" viewBox="247.3 382.56 100.678 76.891"
-            enable-background="new 247.3 382.56 100.678 76.891" xml:space="preserve">
+        <a href="#" class="catalog-video__play_button">
+          <svg class="catalog-video__icon" version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100.678px" height="76.891px"
+            viewBox="247.3 382.56 100.678 76.891" enable-background="new 247.3 382.56 100.678 76.891"
+            xml:space="preserve">
             <g>
               <g>
                 <path fill="#63D1BB"

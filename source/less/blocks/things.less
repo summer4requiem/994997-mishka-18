@@ -3,8 +3,18 @@
   padding: 0;
 }
 
+.things__btn {
+  background-color: transparent;
+  border: none;
+}
+
 .things__list li {
   margin-bottom: 22px;
+}
+
+.things__img_toys {
+  width: 100%;
+  height: auto;
 }
 
 .things-wrapper {
@@ -70,7 +80,7 @@
     margin-bottom: 53px;
   }
 
-  .things__img--toys {
+  .things__img_toys {
     width: 334px;
     height: 334px;
   }
@@ -87,16 +97,20 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .things__list li:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .things__list li:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (min-width: 1150px) {
   .things-wrapper {
     max-width: 1050px;
     width: auto;
-  }
-
-  .things__img {
-    width: 100%;
   }
 
   .things__feature {
@@ -115,13 +129,20 @@
 
   .things__list li {
     width: 30%;
-    min-height: 719px;
     display: flex;
     flex-direction: column;
   }
 
-  .things__img--toys {
-    width: 316px;
+  .things__list li:last-child .things__price {
+    padding: 27px 24px 15px 35px;
+  }
+
+  .things__img_toys {
+    width: 315px;
     height: 462px;
+  }
+
+  .things__price {
+    padding: 27px 24px 39px 35px;
   }
 }
