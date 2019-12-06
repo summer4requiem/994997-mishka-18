@@ -77,7 +77,6 @@
   margin-top: -13px;
 }
 
-
 @media (min-width: 768px) {
   .catalog-video__img {
     width: 668px;
@@ -86,11 +85,41 @@
 
   .catalog-video {
     width: 668px;
+    padding-bottom: 44px;
 
     &::before,
     &::after {
       display: none;
     }
+  }
+
+  .catalog-video__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .catalog-video__description {
+    margin: 0;
+    padding: 10px 1px;
+    margin-bottom: 25px;
+  }
+
+  .catalog-video__comment {
+    padding: 0 33px 0 40px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .catalog-video__title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    justify-content: flex-start;
+    padding: 34px 13px 10px 51px;
+  }
+
+  .catalog-video__play_button {
+    margin-top: -83px;
   }
 }
 
