@@ -8,7 +8,7 @@
   padding: 5px;
   display: inline-block;
   width: 100%;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
 }
 
 .form-list__icon_input {
@@ -17,10 +17,9 @@
 
 .form-list__icon {
   position: absolute;
-  right: 0;
-  bottom: 14px;
+  right: 6px;
+  top: 28px;
 }
-
 
 .form-list__cell label {
   display: block;
@@ -86,9 +85,9 @@
 
 .form-list__radio label {
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
   position: relative;
-  padding-top: 11px;
+  padding-top: 13px;
 }
 
 .form-list__radio label::before {
@@ -132,17 +131,12 @@
   background-color: transparent;
 }
 
-
 .form-list__case {
-  margin-bottom: 21px;
-}
-
-.form-list__case:nth-child(3) p {
-  margin-bottom: 0;
+  margin-bottom: 23px;
 }
 
 .form-list__case:nth-child(3) .form-list__name {
-  padding: 10px 0;
+  padding: 11px 0;
 }
 
 .form-list__case:nth-child(3) input {
@@ -151,11 +145,11 @@
 
 .form-list__case:nth-child(4) label {
   margin-bottom: 0;
-  padding: 0 2px 28px;
+  padding: 0 1px 16px;
 }
 
 .form-list__icon_input:first-child {
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .form-list__case:nth-child(4) input {
@@ -170,7 +164,10 @@
 
 .form-list__name {
   margin: 0;
-  // margin-bottom: 32px;
+}
+
+.form-list__patronymic_label {
+  padding-bottom: 12px;
 }
 
 .phone--title {
@@ -207,12 +204,12 @@
   fill: #62d1ba;
 }
 
-.form-list__btn small {
+.form-list__form_note {
   font-size: 14px;
   color: #282828;
   line-height: 16px;
   font-weight: normal;
-  margin-bottom: 21px;
+  margin-bottom: 28px;
 }
 
 .form-list__btn {
@@ -224,9 +221,18 @@
   .form-list__btn {
     justify-content: space-between;
     flex-direction: row;
-    padding-left: 55px;
-    padding-right: 30px;
-    padding-top: 18px;
+    padding: 14px 25px 0 50px;
+  }
+
+  .form-list__case:nth-child(3) .form-list__name {
+    margin-bottom: 27px;
+    display: flex;
+    padding: 10px 0 0 0;
+  }
+
+  .form-list__case:nth-child(4) input {
+    padding-bottom: 16px;
+    width: 500px;
   }
 
   .form-list__radio_inner {
@@ -235,14 +241,12 @@
     justify-content: space-between;
   }
 
-  .form-list__name {
-    margin-bottom: 46px;
-    display: flex;
+  .form-list__radio-name {
+    padding: 14px 1px;
   }
 
   .form-list__name label {
-    width: 83px;
-    margin-right: 53px;
+    width: auto;
   }
 
   .form-list__email_title {
@@ -251,45 +255,51 @@
 
   .form-list__name input {
     background-color: transparent;
+    padding-left: 16px;
   }
 
   .form-list__case:nth-child(4) p {
     position: relative;
-    padding-bottom: 4px;
-    padding-top: 19px;
-    margin: 0;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .form-list__case:nth-child(5) {
-    padding-bottom: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   .form-list__icon {
     position: absolute;
-    right: 0;
-    bottom: 15px;
+    right: 25px;
+    top: -2px;
   }
 
   .form-list__numbers-wrapper {
-    width: 90%;
+    width: 668px;
     margin: 0 auto;
-    padding: 18px 0 0 17px;
+    padding: 64px 0 0 0;
   }
 
   .form-list__message {
     display: flex;
     justify-content: space-between;
-    padding: 57px 51px 0 45px;
+    padding: 28px 51px 0 45px;
+    margin-bottom: 13px;
   }
 
   .form-textarea {
-    width: 74%;
+    width: 501px;
+    padding: 11px 13px;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .form-list__cell {
-    width: 50%;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
+    padding-top: 6px;
+    padding-left: 0;
+    width: 264px;
   }
 
   .form-list__wrapper {
@@ -315,8 +325,9 @@
   }
 
   .form-list__title {
-    width: 54px;
+    width: 84px;
     align-self: end;
+    padding: 13px 0 0 5px;
 
     &::before,
     &::after {
@@ -326,27 +337,36 @@
 
   .form-list__case:first-child {
     display: flex;
-    margin-bottom: 10px;
     padding-left: 50px;
-    padding-top: 8px;
-    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-bottom: 4px;
   }
 
   .form-list__case:nth-child(3) {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 0;
-    padding-top: 42px;
-    padding-left: 3px;
+    justify-content: space-between;
+    padding: 29px 50px 0 50px;
   }
 
   .form-list__case:nth-child(3) .form-list__wrapper {
-    width: 65%;
+    min-width: 501px;
     display: flex;
     flex-direction: column;
     font-size: 19px;
     line-height: 18px;
     font-weight: bold;
+  }
+
+  .form-list__name_label {
+    margin-right: 23px;
+  }
+
+  .form-list__surname_label {
+    margin-right: 28px;
+  }
+
+  .form-list__patronymic_label {
+    margin-right: 26px;
   }
 
   .form-list__radio {
@@ -357,43 +377,67 @@
   }
 
   .form-list__radio label {
-    margin-bottom: 24px;
+    margin-bottom: 15px;
+    padding-top: 14px;
+    padding-left: 5px;
   }
 
   .form-list__radio label::before {
     width: 53px;
     height: 53px;
+    margin: -16px 28px 9px -5px;
   }
 
   .radio--control:checked + label::after {
-    top: 21px;
-    left: 17px;
+    top: 16px;
+    left: 16px;
+  }
+
+  .form-list__cell label {
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .form-list__inner label::before {
     width: 53px;
     height: 53px;
+    margin-right: 24px;
+    margin-left: -15px;
   }
 
   .checkbox--control:checked + label::after {
     width: 34px;
     height: 34px;
     background-size: 34px 34px;
+    left: -3px;
+  }
+
+  .form-list__checkboxes_inner {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 42px;
+  }
+
+  .form-list__title.form-list__title-checkboxes {
+    padding: 23px 0 0 51px;
   }
 
   .form-list__form_button {
-    width: 34%;
-    padding: 2px 29px;
+    padding: 0 29px;
   }
 
   .form-list__case.grey {
     background-color: #f1f1f1;
     padding-bottom: 36px;
-    padding-top: 5px;
+  }
+
+  .form-list__case:nth-child(4) {
+    padding-bottom: 19px;
   }
 
   .form-list__form_note {
-    width: 334px;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
@@ -401,6 +445,31 @@
   .form-list__case {
     padding: 65px;
     margin-bottom: 0;
+  }
+
+  .form-list__numbers-wrapper {
+    width: 1050px;
+    padding: 0;
+  }
+
+  .form-list__case:nth-child(4) input {
+    padding-bottom: 16px;
+    width: 700px;
+  }
+
+  .form-list__title-checkboxes {
+    padding: 24px 0 0 9px;
+  }
+
+  .form-list__checkboxes_inner {
+    display: flex;
+    padding: 46px 0 0 9px;
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .form-list__case-checkboxes {
+    padding: 0;
   }
 
   .form-list__btn small {
@@ -414,36 +483,49 @@
 
   .form-list__icon {
     position: absolute;
-    right: 0;
+    right: 244px;
     bottom: 18px;
   }
 
-  .form-list__name label {
-    width: 96px;
-  }
-
   .form-list__name {
-    margin-bottom: 44px;
+    margin-bottom: 29px;
   }
 
   .form-list__case:nth-child(3) {
-    padding-top: 40px;
-    padding-bottom: 0;
+    padding-bottom: 22px;
     margin-bottom: 0;
     padding-right: 200px;
+    padding-top: 28px;
+    justify-content: space-around;
+
+    .form-list__title {
+      padding: 37px 0 0 36px;
+    }
+  }
+
+  .form-list__case:nth-child(4) p {
+    justify-content: flex-start;
   }
 
   .form-list__case:nth-child(4) {
-    padding-top: 16px;
-    padding-right: 180px;
-    padding-bottom: 48px;
-    padding-left: 44px;
+    padding-left: 111px;
+    padding-bottom: 18px;
+  }
+
+  .form-list__case:nth-child(4) label {
+    width: 71px;
+    margin-right: 40px;
+    padding-top: 4px;
+  }
+
+  .radio--control:checked + label::after {
+    top: 14px;
   }
 
   .form-list__case:nth-child(5) {
-    padding-top: 32px;
-    padding-right: 176px;
-    margin-bottom: 23px;
+    padding-top: 21px;
+    padding-right: 167px;
+    margin-bottom: -6px;
   }
 
   .form-list__message {
@@ -481,6 +563,13 @@
     padding-top: 24px;
   }
 
+  .form-list__radio-name {
+    width: 105px;
+    padding-left: 64px;
+    padding-top: 16px;
+    margin-right: 70px;
+  }
+
   .form-list__title {
     width: 105px;
   }
@@ -496,14 +585,11 @@
 
   .form-list__radio {
     margin: 0;
+    width: auto;
   }
 
   .form-list__radio label::before {
-    margin-right: 17px;
-  }
-
-  .form-list__radio label {
-    margin-bottom: 14px;
+    margin-right: 28px;
   }
 
   .form-list__cell {
@@ -519,8 +605,8 @@
   .form-list__inner {
     width: 875px;
     flex-direction: row;
-    padding-right: 52px;
-    padding-left: 30px;
+    padding-right: 73px;
+    padding-left: 10px;
   }
 
   .form-list__box {
@@ -528,7 +614,7 @@
   }
 
   .form-list__radio_inner {
-    width: 911px;
+    width: 1050px;
     display: flex;
     margin: 0 auto;
     padding-top: 18px;
