@@ -7,6 +7,7 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var del = require("del");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -34,4 +35,21 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
+gulp.task("copy", function(){
+  return gulp.src([
+    "source/fonts/*",
+    "source/img/**",
+    "source/js/**",
+    "source/*.html"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
+  });
+
+  gulp.task("clean", function() {
+    return del("build");
+  });
+
 gulp.task("start", gulp.series("css", "server"));
+gulp.task("build", gulp.series("clean", "copy", "css"));

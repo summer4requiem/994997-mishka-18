@@ -9,7 +9,7 @@
 }
 
 .things__list li {
-  margin-bottom: 22px;
+  margin-bottom: 34px;
 }
 
 .things__img_toys {
@@ -35,10 +35,12 @@
   color: #444444;
   line-height: 30px;
   margin: 0;
+  padding: 5px 0;
 }
 
 .things__price {
-  padding: 26px 24px 1px 33px;
+  padding: 27px 24px 1px 24px;
+  margin-bottom: 9px;
 }
 
 .things__feature {
@@ -49,7 +51,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 47px 25px 26px 32px;
+  padding: 29px 19px 22px 23px;
 }
 
 .things__buttons::before {
@@ -75,9 +77,26 @@
 
 @media (min-width: 768px) {
   .things-wrapper {
-    width: 80%;
-    margin: 0 auto;
+    width: auto;
+    padding: 0 50px;
     margin-bottom: 53px;
+  }
+
+  .things__info {
+    font-size: 15px;
+  }
+
+  .things__buttons {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .things__price {
+    padding: 24px 22px 1px 26px;
+  }
+
+  .things__list li {
+    margin-bottom: 54px;
   }
 
   .things__img_toys {
@@ -105,12 +124,18 @@
   .things__list li:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
+
+  .things__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 @media (min-width: 1150px) {
   .things-wrapper {
     max-width: 1050px;
     width: auto;
+    padding: 0;
   }
 
   .things__feature {
@@ -120,6 +145,12 @@
   .things__title {
     font-size: 20px;
     line-height: 24px;
+    display: inline-block;
+  }
+
+  .things__info {
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .things__list {
@@ -131,10 +162,11 @@
     width: 30%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
   }
 
   .things__list li:last-child .things__price {
-    padding: 27px 24px 15px 35px;
+    padding: 27px 24px 15px 24px;
   }
 
   .things__img_toys {
@@ -142,7 +174,11 @@
     height: 462px;
   }
 
+  .things__buttons {
+    padding: 3px 25px 26px 25px;
+  }
+
   .things__price {
-    padding: 27px 24px 39px 35px;
+    padding: 27px 29px 39px 26px;
   }
 }
