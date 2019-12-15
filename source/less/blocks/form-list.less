@@ -14,12 +14,26 @@
   margin-bottom: 0;
 }
 
+.form-list__title[for="suggest"] {
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+
+.form-list__email_title {
+  margin-bottom: 8px;
+}
+
+
 .form-list__case {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
+}
+
+.form-list__initials {
+  padding: 11px 0 0;
 }
 
 .form-list__radio-box {
-  padding: 13px 0 9px 0;
+  padding: 13px 0 11px 0;
 }
 
 .form-list__numbers-wrapper {
@@ -27,7 +41,7 @@
 }
 
 .form-list__tel {
-  padding: 10px 0 15px;
+  padding: 12px 0 16px;
   border: none;
   border-bottom: 2px solid black;
   background-color: transparent;
@@ -42,7 +56,7 @@
 }
 
 .form-list__email {
-  padding: 4px 0 15px;
+  padding: 10px 0 15px;
   border: none;
   border-bottom: 2px solid black;
   margin-bottom: 6px;
@@ -54,7 +68,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .form-list__icon_input {
@@ -107,8 +121,8 @@
   background-size: 23px 17px;
   width: 20px;
   height: 20px;
-  left: -9px;
-  top: 11px;
+  left: -12px;
+  top: 12px;
 }
 
 .radio--control:checked + label::after {
@@ -168,7 +182,7 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 13px 45px;
+  padding: 15px 45px;
   border: 2px solid;
   text-align: center;
   background-color: transparent;
@@ -176,7 +190,7 @@
 
 .form-list__cell {
   margin-bottom: 19px;
-  padding-left: 5px;
+  padding-left: 3px;
 }
 
 .form-list__patronymic_label {
@@ -259,8 +273,7 @@
 
   .form-list__name-wrapper {
     width: 500px;
-    padding-top: 5px;
-    margin-bottom: 34px;
+    padding-top: 7px;
   }
 
   .form-list__name {
@@ -270,7 +283,7 @@
   }
 
   .form-list__name-case {
-    padding: 23px 0 15px 2px;
+    padding: 23px 0 50px 5px;
   }
 
   .form-list__tel {
@@ -320,11 +333,12 @@
   }
 
   .form-list__radio-name {
-    padding: 21px 1px;
+    padding: 29px 1px;
   }
 
   .form-list__name label {
     width: auto;
+    font-size: 19px;
   }
 
   .form-list__email_title {
@@ -450,7 +464,7 @@
   .form-list__radio {
     font-size: 19px;
     line-height: 18px;
-    padding-top: 0;
+    padding-top: 8px;
     width: 501px;
   }
 
@@ -509,6 +523,14 @@
     padding: 41px 0 30px 0;
   }
 
+  .form-list__phone_title {
+    padding: 17px 16px 0 0;
+  }
+
+  .form-list__email_title {
+    padding: 20px 0 0 16px;
+  }
+
   .form-list__case {
     margin-bottom: 0;
   }
@@ -521,7 +543,9 @@
 
   .form-list__name-wrapper {
     width: 700px;
-    padding: 29px 0 0 3px;
+
+    margin-bottom: 22px;
+    padding: 24px 0 0 0;
   }
 
   .form-list__name-case {
@@ -529,13 +553,12 @@
   }
 
   .form-list__radio-name {
-    padding-left: 64px;
-    padding-top: 16px;
+    padding-top: 33px;
   }
 
   .form-list__numbers-wrapper {
     width: 1050px;
-    padding: 0;
+    padding: 48px 0 43px;
   }
 
   .form-list__case:nth-child(4) input {
@@ -544,8 +567,12 @@
   }
 
   .form-list__title-checkboxes {
-    padding: 21px 0 0 0;
+    padding: 25px 0 0 0;
     text-align: center;
+  }
+
+  .form-list__initials {
+    padding: 25px 0 0;
   }
 
   .form-list__case-checkboxes {
@@ -563,12 +590,14 @@
 
   .form-list__icon {
     position: absolute;
-    right: 244px;
-    bottom: 18px;
+    right: 181px;
+    top: 18px;
   }
 
   .form-list__name {
-    margin-bottom: 42px;
+    margin-bottom: 39px;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .form-list__case:nth-child(4) p {
@@ -576,20 +605,20 @@
   }
 
   .radio--control:checked + label::after {
-    top: 14px;
+    top: 1px;
+    left: 11px;
   }
 
   .form-list__message {
     width: 1050px;
     margin: 0 auto;
-    padding: 0;
+    padding: 54px 0 28px;
+    justify-content: end;
   }
 
   .form-textarea {
     width: 700px;
     margin-bottom: 20px;
-    padding-top: 13px;
-    padding-left: 16px;
   }
 
   .form-list__btn {
@@ -602,7 +631,7 @@
 
     .form-list__form_button {
       width: auto;
-      padding: 15px 26px 15px;
+      padding: 15px 30px 15px;
       margin: 0;
     }
 
@@ -613,10 +642,10 @@
   }
 
   .form-list__title {
-    width: 167px;
+
+    width: 175px;
     text-align: center;
-    padding: 0;
-    padding-top: 28px;
+    padding-right: 11px;
   }
 
   .form-list__case:first-child .title {
@@ -624,10 +653,10 @@
   }
 
   .form-list__radio {
+
     margin: 0;
     width: auto;
-    padding-top: 12px;
-    padding-left: 9px;
+    padding-top: 11px;
   }
 
   .form-list__radio label::before {
