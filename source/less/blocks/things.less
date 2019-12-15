@@ -18,7 +18,8 @@
 }
 
 .things-wrapper {
-  width: 80%;
+  width: auto;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -28,6 +29,26 @@
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
+}
+
+.things__title:hover {
+  opacity: 0.6;
+}
+
+.things__title:active {
+  opacity: 0.3;
+}
+
+.things__icon path {
+  fill: #d6d6d6;
+}
+
+.things__btn:hover .things__icon path {
+  fill: #63d1bb;
+}
+
+.things__btn:active .things__icon path {
+  opacity: 0.3;
 }
 
 .things__info {
@@ -61,18 +82,6 @@
   height: 1px;
   background-color: #ececec;
   top: 3px;
-}
-
-.things__icon path {
-  fill: #d6d6d6;
-}
-
-.things__icon path:hover {
-  fill: #63d1bb;
-}
-
-.things__icon path:active {
-  fill: #d0f1ea;
 }
 
 @media (min-width: 768px) {
