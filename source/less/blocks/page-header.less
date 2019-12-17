@@ -26,7 +26,6 @@
   border-bottom: 1px solid #ececec;
 }
 
-
 .site-list__item:nth-child(5) {
   padding: 26px 5px 26px 32px;
 }
@@ -50,12 +49,14 @@
   }
 
   .site-list__item:nth-child(3) {
-    padding: 18px 1px 0 36px;
+    padding: 17px 0 0 36px;
   }
 
   .page-header {
     width: auto;
     margin: 0;
+    position: relative;
+    z-index: 1;
   }
 
   .page-header__wrapper {
@@ -63,7 +64,6 @@
     padding: 9px 0 0 47px;
     justify-content: start;
   }
-
 
   .page-header__logo-image {
     width: 113px;
@@ -112,10 +112,9 @@
 
   .site-list__item:nth-child(5) {
     order: -3;
-    padding: 30px 50px 32px 37px;
+    padding: 30px 50px 32px 34px;
     border: 1px solid #ececec;
   }
-
 
   .site-list__item:nth-child(4) {
     order: -4;

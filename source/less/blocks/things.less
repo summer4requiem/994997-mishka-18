@@ -9,7 +9,7 @@
 }
 
 .things__list li {
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 }
 
 .things__img_toys {
@@ -18,7 +18,8 @@
 }
 
 .things-wrapper {
-  width: 80%;
+  width: auto;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -30,6 +31,26 @@
   text-decoration: none;
 }
 
+.things__title:hover {
+  opacity: 0.6;
+}
+
+.things__title:active {
+  opacity: 0.3;
+}
+
+.things__icon path {
+  fill: #d6d6d6;
+}
+
+.things__btn:hover .things__icon path {
+  fill: #63d1bb;
+}
+
+.things__btn:active .things__icon path {
+  opacity: 0.3;
+}
+
 .things__info {
   font-size: 13px;
   color: #444444;
@@ -39,7 +60,7 @@
 }
 
 .things__price {
-  padding: 27px 24px 1px 24px;
+  padding: 26px 25px 1px 28px;
   margin-bottom: 9px;
 }
 
@@ -51,7 +72,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 29px 19px 22px 23px;
+  padding: 29px 19px 22px 26px;
 }
 
 .things__buttons::before {
@@ -63,18 +84,6 @@
   top: 3px;
 }
 
-.things__icon path {
-  fill: #d6d6d6;
-}
-
-.things__icon path:hover {
-  fill: #63d1bb;
-}
-
-.things__icon path:active {
-  fill: #d0f1ea;
-}
-
 @media (min-width: 768px) {
   .things-wrapper {
     width: auto;
@@ -84,11 +93,14 @@
 
   .things__info {
     font-size: 15px;
+    padding: 8px 0;
   }
+
 
   .things__buttons {
     font-size: 17px;
     line-height: 30px;
+    padding: 18px 24px 24px 31px;
   }
 
   .things__price {
@@ -131,6 +143,7 @@
   }
 }
 
+
 @media (min-width: 1150px) {
   .things-wrapper {
     max-width: 1050px;
@@ -151,6 +164,7 @@
   .things__info {
     font-size: 15px;
     line-height: 30px;
+    padding: 4px 0 14px;
   }
 
   .things__list {
@@ -166,7 +180,7 @@
   }
 
   .things__list li:last-child .things__price {
-    padding: 27px 24px 15px 24px;
+    padding: 27px 24px 8px 24px;
   }
 
   .things__img_toys {
@@ -179,6 +193,10 @@
   }
 
   .things__price {
-    padding: 27px 29px 39px 26px;
+    padding: 27px 29px 32px 26px;
+  }
+
+  .things__buttons::before {
+    top: -15px;
   }
 }

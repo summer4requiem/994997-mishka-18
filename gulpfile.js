@@ -18,13 +18,13 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -51,5 +51,5 @@ gulp.task("copy", function(){
     return del("build");
   });
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("clean", "copy","css", "server"));
 gulp.task("build", gulp.series("clean", "copy", "css"));
