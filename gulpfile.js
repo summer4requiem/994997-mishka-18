@@ -8,6 +8,20 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var del = require("del");
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
+
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+});
+
+
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -32,7 +46,13 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html", gulp.series("copy","refresh"));
+});
+
+gulp.task("refresh", function(done){
+  server.reload();
+  done();
+
 });
 
 gulp.task("copy", function(){
