@@ -8,6 +8,47 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var del = require("del");
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
+var csso = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
+
+gulp.task("webp", function (){
+  return gulp.src("source/img/**/*.{png,jpg}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("source/img"))
+});
+
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin ([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("html", function (){
+  return gulp.src("source/*.html")
+  .pipe(posthtml([
+  include()
+  ]))
+  .pipe(gulp.dest("build"))
+
+});
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -15,8 +56,9 @@ gulp.task("css", function () {
     .pipe(sourcemap.init())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer()
-    ]))
+      autoprefixer()]))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -31,16 +73,21 @@ gulp.task("server", function () {
     ui: false
   });
 
+  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "refresh"));
   gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html", gulp.series("copy","refresh"));
+});
+
+gulp.task("refresh", function(done){
+  server.reload();
+  done();
 });
 
 gulp.task("copy", function(){
   return gulp.src([
     "source/fonts/*",
     "source/img/**",
-    "source/js/**",
-    "source/*.html"
+    "source/js/**"
   ], {
     base: "source"
   })
@@ -51,5 +98,7 @@ gulp.task("copy", function(){
     return del("build");
   });
 
-gulp.task("start", gulp.series("clean", "copy","css", "server"));
-gulp.task("build", gulp.series("clean", "copy", "css"));
+
+
+gulp.task("build", gulp.series("clean","copy","css","sprite","html","images","webp",));
+gulp.task("start", gulp.series("build", "server"));
