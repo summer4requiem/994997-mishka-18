@@ -47,12 +47,16 @@
   background-color: transparent;
 }
 
-.form-list__phone_title {
-  margin-bottom: 6px;
+.form-list__tel:hover .form-list__icon {
+  fill: #62d1ba;
 }
 
-.form-list__tel :hover .form-list__icon path {
-  fill: #62d1ba;
+.form-list__email:hover {
+  border-bottom-color: #62d1ba;
+}
+
+.form-list__phone_title {
+  margin-bottom: 6px;
 }
 
 .form-list__email {
@@ -73,12 +77,6 @@
 
 .form-list__icon_input {
   position: relative;
-}
-
-.form-list__icon {
-  position: absolute;
-  right: 5px;
-  top: 40px;
 }
 
 .form-list__cell label {
@@ -235,8 +233,11 @@
   color: #000000;
 }
 
-.form-list__icon path {
+.form-list__icon {
   fill: #cccccc;
+  position: absolute;
+  right: 5px;
+  top: 40px;
 }
 
 .form-list__icon path:hover {
