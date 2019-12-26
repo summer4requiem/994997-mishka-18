@@ -1,10 +1,17 @@
+.site-list__item:not(.main-nav__no-js) {
+  display: none;
+}
+
+.site-list__item:not(.main-nav__opened) {
+  display: block;
+}
+
 .main-nav__list {
   list-style: none;
   text-decoration: none;
   padding: 0;
   margin: 0;
 }
-
 
 .site-list__item a {
   font-size: 17px;
@@ -77,15 +84,10 @@
   z-index: 2;
   display: block;
   width: 80px;
-  height: 80px;
+  height: 70px;
   background-color: transparent;
   border: none;
 }
-
-.main-nav__toggle__no-js {
-  display: block;
-}
-
 
 @media (min-width: 768px) {
   .main-nav {

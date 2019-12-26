@@ -150,7 +150,7 @@
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item main-nav__no-js main-nav__opened">
             <div class="page-header__wrapper">
               <a class="page-header__logo">
                 <picture>
@@ -251,7 +251,7 @@
               <source media="(min-width: 1150px)"
                 srcset="./img/triple-set-desktop@1x.jpg 1x, ./img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
-                srcset="./img/triple-set-tablet@1x.jpg 1x,./img/triple-set-tablet@2x.jpg 2x">
+              srcset="./img/triple-set-tablet@1x.jpg 1x, ./img/triple-set-tablet@2x.jpg 2x">
               <img class="best-product__img" src="./img/triple-set-mobile@1x.jpg" width="260" height="315"
                 srcset="./img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
             </picture>
@@ -444,7 +444,9 @@
       </div>
     </footer>
   </main>
-  <script src="burger.js"></script>
+  <script src="./js/burger.js"></script>
+  <script src="./js/picturefill.js"></script>
+  <script src="./js/svgforeverybody.js"></script>
 </body>
 
 </html>
