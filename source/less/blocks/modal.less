@@ -1,5 +1,4 @@
 .modal-overlay {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -7,6 +6,14 @@
   width: 100%;
   height: 100vh;
   background-color: hsla(0, 0%, 100%, 0.9);
+}
+
+.modal-overlay--opened {
+  display: block;
+}
+
+.modal-overlay--closed {
+  display: none;
 }
 
 .modal-cart {

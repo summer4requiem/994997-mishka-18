@@ -1,9 +1,14 @@
-.site-list__item:not(.main-nav__no-js) {
+.site-list--hidden li:nth-child(n+2) {
   display: none;
 }
 
-.site-list__item:not(.main-nav__opened) {
-  display: block;
+.no-js--hidden {
+  display: none;
+}
+
+.site-list__item:last-child {
+  padding: 0;
+  padding-bottom: 0;
 }
 
 .main-nav__list {
@@ -84,7 +89,7 @@
   z-index: 2;
   display: block;
   width: 80px;
-  height: 70px;
+  height: 72px;
   background-color: transparent;
   border: none;
 }

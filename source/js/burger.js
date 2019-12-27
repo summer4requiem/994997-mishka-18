@@ -1,9 +1,10 @@
 var burger =  document.querySelector(".main-nav__toggle");
-var menuOpen = document.querySelector(".main-nav__no-js");
+var siteList = document.querySelector(".site-list");
 
-burger.addEventListener ("click", function (evt) {
+document.querySelector(".no-js--hidden").classList.remove("no-js--hidden");
+siteList.classList.add("site-list--hidden")
+
+burger.addEventListener ("click", function(evt){
   evt.preventDefault();
-  menuOpen.classList.remove("main-nav__no-js");
+  siteList.classList.toggle("site-list--hidden");
 });
-
-  menuOpen.classList.add("main-nav__opened");
