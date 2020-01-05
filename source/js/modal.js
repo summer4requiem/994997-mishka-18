@@ -1,5 +1,5 @@
 var modalshow =  document.querySelector(".modal-overlay");
-var thingsBtns = document.querySelectorAll(".things__btn");
+var thingsBtns = document.querySelectorAll(".modal--btn");
 
 thingsBtns.forEach (function (el) {
     el.addEventListener ("click", function(evt){
