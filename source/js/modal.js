@@ -1,14 +1,16 @@
 var modalshow =  document.querySelector(".modal-overlay");
-var thingsBtn = document.querySelector(".things__btn");
+var thingsBtns = document.querySelectorAll(".things__btn");
 
-
-thingsBtn.addEventListener ("click", function(evt){
-  evt.preventDefault();
-  modalshow.classList.remove("modal-overlay--closed");
-  modalshow.classList.toggle("modal-overlay--opened");
+thingsBtns.forEach (function (el) {
+    el.addEventListener ("click", function(evt){
+    evt.preventDefault();
+    modalshow.classList.remove("modal-overlay--closed");
+    modalshow.classList.toggle("modal-overlay--opened");
+  })
 })
 
-window.addEventListener ("click", function(evt){
+
+modalshow.addEventListener ("click", function(evt){
   evt.preventDefault();
   if (evt.target === modalshow) {
     modalshow.classList.toggle("modal-overlay--opened");

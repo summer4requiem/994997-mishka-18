@@ -76,6 +76,7 @@
   fill: #63d1bb;
 }
 
+
 .main-nav__toggle:active::before {
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.3), 0 16px 0 0 rgba(0, 0, 0, 0.3);
@@ -98,6 +99,10 @@
   .main-nav {
     display: flex;
     min-height: 92px;
+  }
+
+  .site-list--hidden li:nth-child(n+2) {
+    display: block;
   }
 
   .site-list__cart-icon {
