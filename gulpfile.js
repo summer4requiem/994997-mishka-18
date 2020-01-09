@@ -15,12 +15,15 @@ var include = require("posthtml-include");
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var htmlmin = require("gulp-htmlmin");
+var uglify = require("uglify-js");
 
 gulp.task("webp", function (){
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("source/img"))
 });
+
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -46,6 +49,7 @@ gulp.task("html", function (){
   .pipe(posthtml([
   include()
   ]))
+  .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"))
 
 });
