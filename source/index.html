@@ -359,8 +359,9 @@
         </div>
       </div>
       <div class="contacts__map">
-        <iframe class="mapssss" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.619820635563!2d30.323036669731223!3d59.93845045033328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20101%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1578228086331!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
-        <div class="contacts__map-box map-offline">
+        <div class="contacts__map--api" id="google-map" tabindex="-1">
+        </div>
+        <div class="contacts__map-box">
         <picture>
           <source media="(min-width: 1150px)" type="image/webp"
             srcset="./img/map-desktop@1x.webp 1x, ./img/map-desktop@2x.webp 2x">
@@ -434,7 +435,7 @@
         <form action="https://echo.htmlacademy.ru" method="post" class="size-property">
           <div class="size-form__inner">
             <div class="modal__property">
-              <input class="visually-hidden modal-input" type="checkbox" name="small" id="small-size">
+              <input class="visually-hidden modal-input" type="checkbox" name="small" id="small-size" checked>
               <label class="modal-checkbox" for="small-size">s</label>
             </div>
             <div class="modal__property">
@@ -451,6 +452,9 @@
       </div>
     </div>
   </div>
+  <script src="./js/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+  type="text/javascript"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/burger.js"></script>
   <script src="./js/picturefill.js"></script>

@@ -73,14 +73,23 @@
   padding: 18px 0;
   text-align: center;
   box-shadow: inset 0 0 0 2px rgba(68, 68, 68, 0.1);
+  cursor: pointer;
 }
 
-.modal-input:checked + .modal-checkbox:hover {
+.modal-input:hover + .modal-checkbol {
   box-shadow: inset 0 0 0 2px rgba(68, 68, 68, 0.7);
 }
 
 .modal-input:checked + .modal-checkbox {
   box-shadow: inset 0 0 0 2px #63d1bb;
+}
+
+.modal-input:active + .modal-checkbox {
+  box-shadow: inset 0 0 0 2px #63d1bb;
+}
+
+.modal-input:focus + .modal-checkbox {
+  outline: 1px solid orange;
 }
 
 @media (min-width: 768px) {
