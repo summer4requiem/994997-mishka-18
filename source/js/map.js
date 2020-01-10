@@ -8,7 +8,6 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: coords,
     map: map,
-    draggable: true,
     animation: google.maps.Animation.DROP,
     icon: {
       url: "./img/icon-map-pin.svg",

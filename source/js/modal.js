@@ -1,19 +1,24 @@
-var modalshow =  document.querySelector(".modal-overlay");
+var modalShow =  document.querySelector(".modal-overlay");
 var thingsBtns = document.querySelectorAll(".modal--btn");
+var modalCart = document.querySelector(".modal-cart");
+
 
 thingsBtns.forEach (function (el) {
     el.addEventListener ("click", function(evt){
     evt.preventDefault();
-    modalshow.classList.remove("modal-overlay--closed");
-    modalshow.classList.toggle("modal-overlay--opened");
+    modalShow.classList.remove("modal-overlay--closed");
+    modalCart.classList.remove("modal-overlay--closed");
+    modalShow.classList.add("modal-overlay--opened");
+    modalCart.classList.add("modal-overlay--opened");
   })
 })
 
 
-modalshow.addEventListener ("click", function(evt){
+modalShow.addEventListener ("click", function(evt){
   evt.preventDefault();
-  if (evt.target === modalshow) {
-    modalshow.classList.toggle("modal-overlay--opened");
-    modalshow.classList.add("modal-overlay--closed");
+  if (evt.target === modalShow) {
+    modalShow.classList.remove("modal-overlay--opened");
+    modalShow.classList.add("modal-overlay--closed");
+    modalCart.classList.add("modal-overlay--closed");
   }
 })
