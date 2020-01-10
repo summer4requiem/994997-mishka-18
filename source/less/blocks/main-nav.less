@@ -46,15 +46,23 @@
   color: #cacaca;
 }
 
-.main-nav__toggle::before {
-  content: "";
+.main-nav__toggle {
+  direction: none;
   position: absolute;
-  top: 29px;
-  left: 30px;
-  width: 21px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 80px;
+  height: 72px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icon-menu-open.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.main-nav__toggle__closed {
+  background-image: url("../img/icon-menu-close.svg");
 }
 
 .site-list__search-icon {
@@ -82,18 +90,6 @@
   box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.3), 0 16px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-.main-nav__toggle {
-  direction: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  display: block;
-  width: 80px;
-  height: 72px;
-  background-color: transparent;
-  border: none;
-}
 
 @media (min-width: 768px) {
   .main-nav {

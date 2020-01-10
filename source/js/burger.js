@@ -7,4 +7,5 @@ siteList.classList.add("site-list--hidden")
 burger.addEventListener ("click", function(evt){
   evt.preventDefault();
   siteList.classList.toggle("site-list--hidden");
+  burger.classList.toggle("main-nav__toggle__closed");
 });
