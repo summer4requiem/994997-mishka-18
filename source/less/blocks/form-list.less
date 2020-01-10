@@ -47,12 +47,25 @@
   background-color: transparent;
 }
 
-.form-list__phone_title {
-  margin-bottom: 6px;
+.form-list__tel:hover {
+  border-bottom-color: #62d1ba;
 }
 
-.form-list__tel :hover .form-list__icon path {
+.form-list__tel:hover + .form-list__icon {
   fill: #62d1ba;
+}
+
+.form-list__email:hover + .form-list__icon {
+  fill: #62d1ba;
+}
+
+
+.form-list__email:hover {
+  border-bottom-color: #62d1ba;
+}
+
+.form-list__phone_title {
+  margin-bottom: 6px;
 }
 
 .form-list__email {
@@ -73,12 +86,6 @@
 
 .form-list__icon_input {
   position: relative;
-}
-
-.form-list__icon {
-  position: absolute;
-  right: 5px;
-  top: 40px;
 }
 
 .form-list__cell label {
@@ -178,14 +185,9 @@
 }
 
 .form-list__form_button {
-  color: #444444;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 15px 45px;
-  border: 2px solid;
   text-align: center;
   background-color: transparent;
+  padding: 13px 40px;
 }
 
 .form-list__cell {
@@ -235,8 +237,11 @@
   color: #000000;
 }
 
-.form-list__icon path {
+.form-list__icon {
   fill: #cccccc;
+  position: absolute;
+  right: 5px;
+  top: 40px;
 }
 
 .form-list__icon path:hover {
@@ -297,7 +302,6 @@
   }
 
   .form-list__inner {
-    width: 501px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -406,9 +410,6 @@
     margin-bottom: 20px;
   }
 
-  .form-list__wrapper {
-    display: flex;
-  }
 
   .form-list__box {
     font-size: 19px;
@@ -438,15 +439,6 @@
     display: flex;
     justify-content: space-between;
     padding: 38px 50px 0 46px;
-  }
-
-  .form-list__case:nth-child(3) .form-list__wrapper {
-    min-width: 501px;
-    display: flex;
-    flex-direction: column;
-    font-size: 19px;
-    line-height: 18px;
-    font-weight: bold;
   }
 
   .form-list__name_label {
@@ -520,7 +512,7 @@
 @media (min-width: 1150px) {
   .form-list__linear {
     width: 1050px;
-    justify-content: flex-start;
+    justify-content: start;
     padding: 41px 0 30px 0;
   }
 
@@ -614,7 +606,7 @@
     width: 1050px;
     margin: 0 auto;
     padding: 54px 0 28px;
-    justify-content: flex-start;
+    justify-content: start;
   }
 
   .form-textarea {
@@ -654,7 +646,6 @@
   }
 
   .form-list__radio {
-
     margin: 0;
     width: auto;
     padding-top: 11px;
@@ -664,18 +655,8 @@
     margin-right: 28px;
   }
 
-  .form-list__cell {
-    width: auto;
-  }
-
-  .form-list__wrapper {
-    width: 255px;
-    display: flex;
-    flex-direction: column;
-  }
 
   .form-list__inner {
-    width: 875px;
     flex-direction: row;
     padding: 7px 96px 0 0;
   }

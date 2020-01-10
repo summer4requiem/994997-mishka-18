@@ -14,8 +14,9 @@
   fill: #d3d2d2;
 }
 
-.things__list li {
+.things__item {
   margin-bottom: 31px;
+  width: 100%;
 }
 
 .things__img_toys {
@@ -98,7 +99,6 @@
     padding: 8px 0;
   }
 
-
   .things__buttons {
     font-size: 17px;
     line-height: 30px;
@@ -109,19 +109,13 @@
     padding: 24px 22px 1px 26px;
   }
 
-  .things__list li {
-    margin-bottom: 54px;
-  }
-
-  .things__img_toys {
-    width: 334px;
-    height: 334px;
-  }
-
   .things__item {
     display: flex;
     margin-bottom: 50px;
-    width: 668px;
+  }
+
+  .things__img {
+    width: 50%;
   }
 
   .things__feature {
@@ -172,6 +166,7 @@
   .things__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .things__list li {

@@ -4,10 +4,17 @@
   margin: 0 auto;
 }
 
-.social-list__link:hover path {
+.main-footer__logo-image:hover {
   fill: #46c1ae;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
+.social-list__link:hover {
+  fill: #46c1ae;
+}
 
 .main-footer__inner {
   display: flex;
@@ -111,6 +118,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    // для IE
+    padding: 35px 0;
   }
 
   .main-footer__inner {

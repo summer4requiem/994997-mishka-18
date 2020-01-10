@@ -1,11 +1,8 @@
-.site-list__text {
-  display: block;
-}
 
 .page-header__wrapper {
   display: flex;
   width: auto;
-  min-height: 80px;
+  min-height: 79px;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -27,7 +24,7 @@
 }
 
 .site-list__item:nth-child(5) {
-  padding: 26px 5px 26px 32px;
+  padding: 26px 5px 32px 32px;
 }
 
 .site-list__item:nth-child(1) {
@@ -119,7 +116,7 @@
   .site-list__item:nth-child(4) {
     order: -4;
     border: 1px solid #ececec;
-    padding: 18px 28px 15px 30px;
+    padding: 37px 28px 15px 30px;
   }
 
   .site-list__item:nth-child(6) {
@@ -140,7 +137,7 @@
 
   .page-header__wrapper {
     border: none;
-    padding: 0 0 0 58px;
+    padding: 9px 0 0 58px;
   }
 
   .page-header__logo {
@@ -150,7 +147,15 @@
 
     .page-header__logo-image {
       width: 149px;
-      height: 89px;
+      height: 72px;
+    }
+
+    .page-header__logo-image:hover {
+      opacity: 0.6;
+    }
+
+    .page-header__logo-image:active {
+      opacity: 0.3;
     }
   }
 }
