@@ -108,8 +108,16 @@
   fill: #63d1bb;
 }
 
+.site-list__search-icon:active {
+  opacity: 0.3;
+}
+
 .site-list__item_link-cart:hover .site-list__cart-icon {
   fill: #63d1bb;
+}
+
+.site-list__item_link-cart:active .site-list__cart-icon {
+  opacity: 0.3;
 }
 
 
@@ -260,10 +268,11 @@
   }
 
   .site-list__item:nth-child(4) {
-    width: 84px;
-    padding: 30px 30px;
+    // width: 84px;
+    padding: 30px 33px;
     order: -4;
     margin-left: auto;
+    margin-bottom: -1px;
   }
 
   .site-list__item:nth-child(5) {

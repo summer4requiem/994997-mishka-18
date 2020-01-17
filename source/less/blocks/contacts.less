@@ -5,7 +5,7 @@
   margin-bottom: 28px;
 }
 
-.contacts__map--api {
+.contacts__map_api {
   height: 460px;
   background-color: #f6e9d6;
 }
@@ -16,8 +16,9 @@
 
 .contacts__map_img {
   width: 100%;
+  height: auto;
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 
 .contacts__list {
@@ -28,17 +29,6 @@
   color: #444444;
 }
 
-.contacts__link {
-  color: inherit;
-}
-
-.contacts__link:hover {
-  color: #46c1ae;
-}
-
-.contacts__link:active {
-  opacity: 0.9;
-}
 
 .contacts__btn {
   display: block;
@@ -54,7 +44,6 @@
 }
 
 .contacts__wrapper {
-  // width: auto;
   padding: 0 26px 4px;
 }
 
@@ -80,13 +69,38 @@
 }
 
 
+.contacts__link {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.contacts__link:hover {
+  color: #46c1ae;
+}
+
+.contacts__link:active {
+  opacity: 0.3;
+}
+
+.contacts__link::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #62d1ba;
+  left: 0;
+  top: 24px;
+}
+
+
 @media (min-width: 768px) {
   .contacts {
     margin-bottom: 43px;
   }
 
   .contacts__wrapper {
-    padding: 18px 46px 0;
+    padding: 18px 50px 0;
   }
 
   .contacts__address {
@@ -95,10 +109,6 @@
 
   .contacts__map {
     margin-bottom: 45px;
-  }
-
-  .contacts__map_img {
-    height: 454px;
   }
 
   .contacts__title {
@@ -116,7 +126,7 @@
     background: url("../img/icon-flag.svg") no-repeat;
     right: 0;
     top: -4px;
-    width: 55px;
+    width: 47px;
     height: 85px;
   }
 
@@ -124,20 +134,6 @@
     width: 249px;
     margin: 0 auto;
     padding: 13px 9px;
-  }
-
-  .contacts__link {
-    position: relative;
-  }
-
-  .contacts__link::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 200px;
-    background-color: #62d1ba;
-    left: 0;
-    top: 24px;
   }
 
   .contacts__list {
@@ -204,12 +200,12 @@
     padding: 0;
   }
 
-  .contacts__map--api {
+  .contacts__map_api {
     width: 525px;
     height: 457px;
   }
 
-  .contacts__map--api-wrapper {
+  .contacts__map_api__wrapper {
     position: absolute;
     right: 0;
     top: -66px;

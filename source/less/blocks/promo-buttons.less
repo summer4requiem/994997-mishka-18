@@ -16,12 +16,8 @@
   color: white;
 }
 
-.promo-buttons__icon {
-  fill: #3bb09d;
-}
-
-.promo-buttons__btn:hover .promo-buttons__icon {
-  fill: #29a592;
+.promo-buttons__btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .promo-buttons__btn_button-interior {
@@ -31,6 +27,31 @@
 .promo-buttons__btn_button-toy {
   background-color: #56c3b2;
 }
+
+.icon-toy {
+  fill: #35a999;
+}
+
+.icon-interior {
+  fill: #3bb09d;
+}
+
+.promo-buttons__btn_button-interior:hover {
+  background-color: #59d5bc;
+}
+
+.promo-buttons__btn_button-toy:hover {
+  background-color: #46c1ae;
+}
+
+.promo-buttons__btn:active .icon-interior {
+  fill: rgba(70, 193, 174, 0.7);
+}
+
+.promo-buttons__btn:active .icon-toy {
+  fill: rgba(3, 169, 153, 0.3);
+}
+
 
 @media (min-width: 768px) {
   .promo-buttons {
@@ -42,7 +63,7 @@
   }
 
   .promo-buttons__promo_name {
-    font-style: 20px;
+    font-size: 20px;
     line-height: 30px;
   }
 

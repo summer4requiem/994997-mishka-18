@@ -163,7 +163,7 @@
                   <img class="page-header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Мишка">
                 </picture>
               </a>
-              <button class="main-nav__toggle no-js--hidden" aria-label="отображение меню"></button>
+              <button class="main-nav__toggle main-nav__no-js" aria-label="отображение меню"></button>
             </div>
           </li>
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
@@ -225,7 +225,7 @@
               </div>
               <div class="things__buttons">
                 <b>1 200 руб.</b>
-                <button class="things__btn modal--btn" type="button" title="Выбрать размер">
+                <button class="things__btn modal_btn" type="button" title="Выбрать размер">
                   <svg aria-hidden="true" width="20" height="20" class="things__icon">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -257,7 +257,7 @@
               </div>
               <div class="things__buttons">
                 <b>690 руб.</b>
-                <button class="things__btn modal--btn" type="button" title="Выбрать размер">
+                <button class="things__btn modal_btn" type="button" title="Выбрать размер">
                   <svg aria-hidden="true" width="20" height="20" class="things__icon">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -289,7 +289,7 @@
               </div>
               <div class="things__buttons">
                 <b>1 500 руб.</b>
-                <button class="things__btn modal--btn" type="button" title="Выбрать размер">
+                <button class="things__btn modal_btn" type="button" title="Выбрать размер">
                   <svg aria-hidden="true" width="20" height="20" class="things__icon">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -301,7 +301,7 @@
 
       </div>
     </section>
-    <div class="catalog-video__wrapper">
+    <div class="catalog-video_wrapper">
       <div class="catalog-video">
         <h3 class="visually-hidden">Видео обзор производства</h3>
         <div class="catalog-video__header">
@@ -407,28 +407,28 @@
       </p>
     </div>
   </footer>
-  <div class="modal-overlay modal-overlay--closed">
+  <div class="modal-overlay overlay_closed">
   </div>
-  <div class="modal-cart modal-overlay--closed">
+  <div class="modal-cart overlay_closed">
     <div class="modal-cart__wrapper">
-      <p class="modal__heading">Добавить в&nbsp;корзину</p>
-      <p class="modal__description">Выберите размер:</p>
+      <p class="modal-cart__heading">Добавить в&nbsp;корзину</p>
+      <p class="modal-cart__description">Выберите размер:</p>
       <form action="https://echo.htmlacademy.ru" method="post" class="size-property">
-        <div class="size-form__inner">
-          <div class="modal__property">
+        <div class="size-property__inner">
+          <div class="size-property__box">
             <input class="visually-hidden modal-input" type="checkbox" name="small" id="small-size" checked>
             <label class="modal-checkbox" for="small-size">s</label>
           </div>
-          <div class="modal__property">
+          <div class="size-property__box">
             <input class="modal-input visually-hidden" type="checkbox" name="medium" id="medium-size">
             <label class="modal-checkbox" for="medium-size">m</label>
           </div>
-          <div class="modal__property">
+          <div class="size-property__box">
             <input class="modal-input visually-hidden" type="checkbox" name="large" id="large-size">
             <label class="modal-checkbox" for="large-size">l</label>
           </div>
         </div>
-        <button class="modal__btn button--primary btn" type="submit">Добавить</button>
+        <button class="modal-cart__button btn" type="submit">Добавить</button>
       </form>
     </div>
   </div>
