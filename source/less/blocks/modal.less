@@ -2,13 +2,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 99;
   width: 100%;
   height: 100vh;
   background-color: hsla(0, 0%, 100%, 0.9);
 }
 
-.modal__property {
+.size-property__box {
   width: 32%;
 }
 
@@ -16,7 +16,7 @@
   display: block;
 }
 
-.modal-overlay--closed {
+.overlay_closed {
   display: none;
 }
 
@@ -30,13 +30,14 @@
   height: 336px;
   box-shadow: inset 0 0 0 1px #e5e5e5, 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   margin-top: -170px;
+  z-index: 100;
 }
 
 .modal-cart__wrapper {
   padding: 30px 30px 45px;
 }
 
-.modal__heading {
+.modal-cart__heading {
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -45,13 +46,13 @@
   margin: 0;
 }
 
-.modal__description {
+.modal-cart__description {
   font-size: 15px;
   line-height: 30px;
   text-align: center;
 }
 
-.modal__btn {
+.modal-cart__button {
   background-color: #63d1bb;
   color: #ffffff;
   width: 100%;
@@ -59,7 +60,7 @@
   border: none;
 }
 
-.size-form__inner {
+.size-property__inner {
   display: flex;
   justify-content: space-between;
   margin-bottom: 31px;
@@ -97,7 +98,7 @@
     margin-top: -168px;
   }
 
-  .modal__description {
+  .modal-cart__description {
     font-size: 17px;
   }
 
