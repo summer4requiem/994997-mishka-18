@@ -225,11 +225,11 @@
               </div>
               <div class="things__buttons">
                 <b>1 200 руб.</b>
-                <button class="things__btn modal_btn" type="button" title="Выбрать размер">
+                <a href="#" class="things__btn modal_btn" type="button" title="Выбрать размер">
                   <svg aria-hidden="true" width="20" height="20" class="things__icon">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </li>
@@ -257,11 +257,11 @@
               </div>
               <div class="things__buttons">
                 <b>690 руб.</b>
-                <button class="things__btn modal_btn" type="button" title="Выбрать размер">
+                <a href="#" class="things__btn modal_btn" type="button" title="Выбрать размер">
                   <svg aria-hidden="true" width="20" height="20" class="things__icon">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </li>
@@ -289,11 +289,11 @@
               </div>
               <div class="things__buttons">
                 <b>1 500 руб.</b>
-                <button class="things__btn modal_btn" type="button" title="Выбрать размер">
+                <a href="#" class="things__btn modal_btn" type="button" title="Выбрать размер">
                   <svg aria-hidden="true" width="20" height="20" class="things__icon">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </li>
@@ -360,7 +360,7 @@
   <footer class="main-footer">
     <div class="main-footer__inner">
       <div class="main-footer__wrapper">
-        <a href="#" class="main-footer__logo">
+        <a href="#" class="main-footer__logo" href="index.html">
           <svg class="main-footer__logo-image" width="101" height="34">
             <use xlink:href="#icon-footer"></use>
           </svg>
@@ -405,25 +405,25 @@
       </p>
     </div>
   </footer>
-  <div class="modal-overlay overlay_closed">
+  <div class="modal-overlay modal-overlay__closed">
   </div>
-  <div class="modal-cart overlay_closed">
+  <div class="modal-cart modal-overlay__closed">
     <div class="modal-cart__wrapper">
       <p class="modal-cart__heading">Добавить в&nbsp;корзину</p>
       <p class="modal-cart__description">Выберите размер:</p>
       <form action="https://echo.htmlacademy.ru" method="post" class="size-property">
         <div class="size-property__inner">
           <div class="size-property__box">
-            <input class="visually-hidden modal-input" type="checkbox" name="small" id="small-size" checked>
-            <label class="modal-checkbox" for="small-size">s</label>
+            <input class="size-property__input visually-hidden" type="checkbox" name="small" id="small-size" checked>
+            <label class="size-property__checkbox" for="small-size">s</label>
           </div>
           <div class="size-property__box">
-            <input class="modal-input visually-hidden" type="checkbox" name="medium" id="medium-size">
-            <label class="modal-checkbox" for="medium-size">m</label>
+            <input class="size-property__input visually-hidden" type="checkbox" name="medium" id="medium-size">
+            <label class="size-property__checkbox" for="medium-size">m</label>
           </div>
           <div class="size-property__box">
-            <input class="modal-input visually-hidden" type="checkbox" name="large" id="large-size">
-            <label class="modal-checkbox" for="large-size">l</label>
+            <input class="size-property__input visually-hidden" type="checkbox" name="large" id="large-size">
+            <label class="size-property__checkbox" for="large-size">l</label>
           </div>
         </div>
         <button class="modal-cart__button btn" type="submit">Добавить</button>
