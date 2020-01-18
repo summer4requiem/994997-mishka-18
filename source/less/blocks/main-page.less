@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   background-position: center -17px;
   background-size: 575px 373px;
-  // min-height: 283px;
   background-color: #f9f9f9;
   margin-top: -7px;
 
@@ -21,7 +20,7 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  padding: 62px 37px 121px;
+  padding: 68px 37px 121px;
   margin: 0;
 }
 
@@ -67,7 +66,8 @@
     width: 100%;
     background-image: url("../img/bg-zigzag-fill.svg");
     left: 0;
-    bottom: -9px;
+    background-size: 768px 25px;
+    bottom: -16px;
   }
 }
 
@@ -91,8 +91,12 @@
   }
 
   .main-page__wrapper::after {
-    background-position-x: -36px;
-    bottom: -7px;
+    background-position-x: 50%;
+    bottom: -5px;
+    background-size: auto 37px;
+    height: 24px;
+    min-height: 24px;
+    background-repeat: repeat-x;
   }
 
   .main-page__title {
