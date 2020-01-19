@@ -1,25 +1,3 @@
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 100%;
-  height: 100vh;
-  background-color: hsla(0, 0%, 100%, 0.9);
-}
-
-.size-property__box {
-  width: 32%;
-}
-
-.modal-overlay--opened {
-  display: block;
-}
-
-.overlay_closed {
-  display: none;
-}
-
 .modal-cart {
   position: fixed;
   top: 50%;
@@ -58,36 +36,6 @@
   width: 100%;
   padding: 16px 0;
   border: none;
-}
-
-.size-property__inner {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 31px;
-}
-
-.modal-checkbox {
-  min-width: 82px;
-  text-transform: uppercase;
-  font-weight: bold;
-  display: block;
-  padding: 18px 0;
-  text-align: center;
-  box-shadow: inset 0 0 0 2px rgba(68, 68, 68, 0.1);
-  cursor: pointer;
-}
-
-.modal-input:hover + .modal-checkbox {
-  box-shadow: inset 0 0 0 2px rgba(68, 68, 68, 0.7);
-}
-
-.modal-input:checked + .modal-checkbox {
-  box-shadow: inset 0 0 0 2px #63d1bb;
-}
-
-
-.modal-input:focus + .modal-checkbox {
-  outline: 1px solid orange;
 }
 
 @media (min-width: 768px) {

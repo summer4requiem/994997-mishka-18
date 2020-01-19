@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   background-position: center -17px;
   background-size: 575px 373px;
-  min-height: 283px;
   background-color: #f9f9f9;
   margin-top: -7px;
 
@@ -21,25 +20,20 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  padding: 70px 37px;
-  margin: 0;
+  padding: 68px 37px 121px;
+  margin: 0 auto;
+  max-width: 507px;
 }
 
 @media (min-width: 768px) {
   .main-page__title {
     font-size: 43px;
     line-height: 50px;
-    text-align: center;
     padding: 0;
   }
 
   .social-list {
     margin: 0;
-  }
-
-  .site-list__item a {
-    font-size: 15px;
-    line-height: 24px;
   }
 
   .main-page__background {
@@ -72,7 +66,8 @@
     width: 100%;
     background-image: url("../img/bg-zigzag-fill.svg");
     left: 0;
-    bottom: -9px;
+    background-size: 768px 25px;
+    bottom: -16px;
   }
 }
 
@@ -86,7 +81,6 @@
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position-y: 0;
     padding: 30px 1px 42px;
-    // min-height: 740px;
     background-color: #f9f9f9;
     margin-top: -68px;
     border-top: 1px solid #ececec;
@@ -97,25 +91,18 @@
   }
 
   .main-page__wrapper::after {
-    background-position-x: -36px;
-    bottom: -7px;
-  }
-
-  .site-list__item:nth-child(2) a {
-    font-size: 17px;
-    line-height: 24px;
-  }
-
-  .site-list__item:nth-child(3) a {
-    font-size: 17px;
-    line-height: 24px;
+    background-position-x: 50%;
+    bottom: -5px;
+    background-size: auto 37px;
+    height: 24px;
+    min-height: 24px;
+    background-repeat: repeat-x;
   }
 
   .main-page__title {
     font-size: 53px;
     line-height: 57px;
-    margin: 0;
-    padding: 124px 69px;
-    text-align: center;
+    padding: 124px 37px;
+    max-width: 700px;
   }
 }
