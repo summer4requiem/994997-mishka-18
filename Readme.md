@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Агата Агеева](https://up.htmlacademy.ru/adaptive/18/user/994997).
-* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
+* Наставник: [Лик].
 
 ---
 
